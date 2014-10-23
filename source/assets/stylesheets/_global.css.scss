@@ -1,20 +1,192 @@
-body {
-  background: $light-gray;
-  color: $medium-gray;
+.wrapper {
+  @include outer-container;
 }
 
-.delete-me {
-  @include align-items(center);
-  @include display(flex);
-  @include justify-content(center);
-  height: 100vh;
+.main-header {
+  @include animation(slideDown 0.6s .55s 1 forwards);
+  @include animation-delay(.55s);
+  @include size(auto em(600));
+  background: image-url('snowmass.png') no-repeat top;
+  background-size: cover;
+  border-top: 6px solid $bright-green;
+  color: white;
+  text-align: center;
 
-  .container {
-    text-align: center;
-
-    h1 {
-      font-weight: 200;
-    }
+  h1 {
+    @include animation(slideUp 0.8s .85s 1 backwards);
+    padding: 180px 0 15px;
+    color: #404041;
+    font-weight: 500;
   }
 
+  h5 {
+    @include animation(slideUp 0.8s .85s 1 backwards);
+    padding-bottom: 100px;
+    color: #404041;
+    font-weight: 400;
+  }
+
+  span {
+    text-decoration: underline;
+  }
+}
+
+.arrow {
+  @include size(em(50) em(50));
+  background: image-url('arrow.svg') no-repeat;
+  display: block;
+  margin: em(90, 14) auto;
+}
+
+.btn {
+  @include transition (all, linear, 0.3s);
+  border-radius: em(25);
+  padding: em(15) em(40);
+  margin: em(70) auto em(130);
+  text-transform: uppercase;
+}
+
+.header-btn {
+  @extend .btn;
+  @include animation(slideUp 0.75s);
+  @include animation-delay(.85s);
+  background: $bright-green;
+  color: white;
+  margin-bottom: em(50);
+
+  &:hover {
+    color: white;
+    background: $bright-green;
+    border: 1px solid $bright-green;
+    cursor: pointer;
+  }
+}
+
+#my-work {
+  background: $super-light-gray;
+  text-align: center;
+}
+
+.section-header {
+  color: $light-gray;
+  padding: em(35) 0 em(15);
+  text-align: center;
+}
+
+.animated {
+  @include animation(slideUp 0.75s);
+}
+
+.line {
+  border-bottom: 2px solid $bright-green;
+  margin: 0 auto em(70);
+  width: em(250);
+}
+
+li {
+  @include span-columns(3);
+  margin: em(20) 0;
+}
+
+ul {
+  @include shift(.8);
+}
+
+.jribbble li a,
+#instafeed a {
+  display: inline-block;
+  position: relative;
+
+  img {
+    float: left;
+  }
+
+  &:before {
+    @include position(absolute, 0px 0px 0px 0px);
+    @include transition(all ease-out 0.2s);
+    background-color: rgba(black, .5);
+    content: '';
+    opacity: 1;
+  }
+
+  &:hover {
+    &:before {
+      opacity: 0;
+    }
+  }
+}
+
+.green-btn {
+  @extend .btn;
+  border: 2px solid $bright-green;
+  color: $bright-green;
+  display: inline-block;
+
+  &:hover {
+    color: white;
+    background: $bright-green;
+    border: 1px solid $bright-green;
+    cursor: pointer;
+  }
+}
+
+.about-me {
+  text-align: center;
+
+  p {
+    @include span-columns(10);
+    @include shift(1);
+    color: $medium-gray;
+    padding-bottom: em(30);
+  }
+}
+
+#instafeed {
+  a {
+    margin: em(10);
+  }
+}
+
+.footer {
+  background: $dark-gray;
+  text-align: center;
+
+  h2 {
+    color: $light-gray;
+  }
+
+  a {
+    @include size(em(50));
+    display: inline-block;
+    margin: em(10) em(10) em(50);
+    fill-color: red;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.mail {
+  background: image-url('mail.svg') no-repeat;
+}
+
+.twitter {
+  background: image-url('twitter.svg') no-repeat;
+}
+
+.dribbble {
+  background: image-url('dribbble.svg') no-repeat;
+}
+
+.instagram {
+  background: image-url('instagram.svg') no-repeat;
+}
+
+.github {
+  background: image-url('github.svg') no-repeat;
+}
+
+.linkedin {
+  background: image-url('linkedin.svg') no-repeat;
 }

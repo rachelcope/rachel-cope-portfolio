@@ -6,6 +6,16 @@
     %title= current_page.data.title || "The Middleman"
     = stylesheet_link_tag "application"
 
+    %a(href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css')
+
   %body{class: page_classes}
     = yield
     = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js", "application"
+
+    :javascript
+      var userFeed = new Instafeed({
+          get: 'user',
+          userId: 3806109,
+          accessToken: '3806109.467ede5.64b81e962ae742019d9ce87941328e34'
+      });
+      userFeed.run();
