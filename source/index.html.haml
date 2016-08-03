@@ -1,36 +1,86 @@
 ---
-title: Rachel Cope - Designer
+title: Portfolio of Rachel Cope
 ---
 
-%section.main-header
-  .background
-  .wrapper
-    %h1 Rachel Cope
-    %h5 Adventurer, reader, philanthropist, epicure, <span>designer @thoughtbot</span>
-    %a.header-btn(href="mailto:rachelcope@gmail.com") Contact me
-    %a.arrow(href='#my-work')
-%section#my-work
-  .wrapper
-    %h2.section-header My Work
-    .line.animate
-    %ul.jribbble
-    %a.btn.green-btn(href="https://dribbble.com/rachelcope") More on Dribbble
+%main
+  %section.hero
+    .nav
+      .r-icon
+      -# %a.about-link About Me
+    %header.grid-wrapper.grid-small
+      %h1.hero-header
+        Hi, I’m Rachel, a Colorado-based interdisciplinary designer focused on human psychology, UX, product & front-end design.
+        Currently at <a href="http://thoughtbot.com">thoughtbot</a>.
+      %a.header-btn(href="mailto:rachelcope@gmail.com") Contact me
+      %a.arrow(href='#my-work')
 
-%section.about-me
-  .wrapper
-    %h2.section-header.animate About Me
-    .line
-    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    #instafeed
-    %a.green-btn(href="https://instagram.com/rachelcope") More on Instagram
+  %section#my-work
+    .grid-wrapper
+      %h4.section-header Recent Work
+      .animate
 
-%footer.footer
-  .wrapper
-    %h2.section-header Stay in touch
-    .line
-    %a.mail(href="mailto:rachelcope@gmail.com")
-    %a.twitter(href="https://twitter.com/rachelcope")
-    %a.dribbble(href="https://dribbble.com/rachelcope")
-    %a.instagram(href="https://instagram.com/rachelcope")
-    %a.github(href="https://github.com/rachelcope")
-    %a.linkedin(href="https://linkedin.com/rachelcope")
+      %a.featured-work(href="https://www.zaarly.com" target="_blank")
+        .featured-work--1
+        .featured-work-description
+          .featured-work--title Zaarly.com (current)
+          .featured-work--subtitle Front-end development rewrite: HTML/SLIM, CSS, SCSS, Bourbon, Neat
+
+      %a.featured-work(href="https://dribbble.com/shots/2851503-Android-Material-Design" target="_blank")
+        .featured-work--2
+        .featured-work-description
+          .featured-work--title Android Design
+          .featured-work--subtitle Front-end development rewrite: HTML/SLIM, CSS, SCSS, Bourbon, Neat
+
+      %a.featured-work(href="https://www.zaarly.com" target="_blank")
+        .featured-work--3
+        .featured-work-description
+          .featured-work--title Zaarly.com (current)
+          .featured-work--subtitle Front-end development rewrite: HTML/SLIM, CSS, SCSS, Bourbon, Neat
+
+      %a.featured-work(href="https://www.zaarly.com" target="_blank")
+        .featured-work--4
+        .featured-work-description
+          .featured-work--title Zaarly.com (current)
+          .featured-work--subtitle Front-end development rewrite: HTML/SLIM, CSS, SCSS, Bourbon, Neat
+
+      .featured-work--buttons
+        %a.btn.header-btn(href="https://dribbble.com/rachelcope") More on Dribbble
+        %a.btn.header-btn(href="https://dribbble.com/rachelcope") More on Behance
+
+  %section.leadership-section
+    .leadership
+      %h4.leadership-section-header Speaking
+      %ul
+        %li
+          .leadership--title The Product Design Sprint
+          .leadership--subtitle Women Who Code
+        %li
+          .leadership--title Introduction to Design Thinking
+          .leadership--subtitle Turing School of Software and Design
+        %li
+          .leadership--title What Makes You Tick? Lessons from the Enneagram.
+          .leadership--subtitle thoughtbot
+
+    .leadership
+      %h4.leadership-section-header Writing
+      %ul
+        %li
+          = link_to "CSS Animation for Beginners", "https://robots.thoughtbot.com/css-animation-for-beginners", class: "leadership--title"
+          .leadership--subtitle Giant Robots
+        %li
+          = link_to "CSS Transitions and Transforms for Beginners", "https://robots.thoughtbot.com/transitions-and-transforms", class: "leadership--title"
+          .leadership--subtitle Giant Robots
+        %li
+          = link_to "Cultivate Colorado: A Competition for Social Good", "https://robots.thoughtbot.com/cultivate-colorado", class: "leadership--title"
+          %a.leadership--title
+          .leadership--subtitle Giant Robots
+
+  %footer.footer
+    .grid-wrapper
+      %h4.section-header Stay in touch
+      %a.mail(href="mailto:rachelcope@gmail.com")
+      %a.twitter(href="https://twitter.com/rachelcope")
+      %a.dribbble(href="https://dribbble.com/rachelcope")
+      %a.instagram(href="https://instagram.com/rachelcope")
+      %a.github(href="https://github.com/rachelcope")
+      %a.linkedin(href="https://linkedin.com/rachelcope")

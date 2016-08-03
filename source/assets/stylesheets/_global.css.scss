@@ -1,33 +1,97 @@
-.wrapper {
+body {
+  background: $light-green;
+  padding: $base-spacing;
+  // background: linear-gradient(135deg, rgba(189,244,229,1) 0%, rgba(247,223,226,1) 100%);
+}
+
+main {
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+.grid-wrapper {
   @include outer-container;
 }
 
-.main-header {
-  @include animation(slideDown 0.6s .55s 1 forwards);
+.grid-small {
+  @include media($large-screen-up) {
+    padding: 0 ($large-spacing * 3.5);
+  }
+}
+
+.hero {
+  // @include animation(slideDown 0.6s .55s 1 forwards);
   @include animation-delay(.55s);
-  @include size(auto em(600));
-  background: image-url('snowmass.png') no-repeat top;
+  // background: linear-gradient(rgba(255, 255, 255, 0.50), rgba(255, 255, 255, 0.50)), image-url("snowmass.png");
+  background: $white;
   background-size: cover;
-  border-top: 6px solid $bright-green;
-  color: white;
   text-align: center;
+  width: auto;
+}
 
-  h1 {
-    @include animation(slideUp 0.8s .85s 1 backwards);
-    padding: 180px 0 15px;
-    color: #404041;
-    font-weight: 500;
+.nav {
+  padding: $medium-spacing $large-spacing 0;
+
+}
+
+.r-icon {
+  @include size(3em 2em);
+  background: image-url("arrrr.svg");
+  background-repeat: no-repeat;
+  float: left;
+}
+
+.about-link {
+  color: $base-font-color;
+  font-size: $font-small;
+  float: right;
+  letter-spacing: 1px;
+
+  &:hover {
+    color: $base-font-color;
+  }
+}
+
+.hero-header {
+  @include animation(slideUp 0.8s .85s 1 backwards);
+  color: #404041;
+  font-size: $font-medium;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: $base-spacing;
+  padding: 160px 0 15px;
+
+  @include media($large-screen-up) {
+    font-size: $font-large;
+    margin-bottom: $large-spacing;
   }
 
-  h5 {
-    @include animation(slideUp 0.8s .85s 1 backwards);
-    padding-bottom: 100px;
-    color: #404041;
-    font-weight: 400;
-  }
-
-  span {
+  a {
+    color: $base-font-color;
     text-decoration: underline;
+  }
+}
+
+.btn {
+  @include transition (all, linear, 0.3s);
+  border-radius: em(25);
+  padding: $base-spacing ($large-spacing * 1.5);
+  margin: em(70) auto em(130);
+}
+
+.header-btn {
+  @extend .btn;
+  @include animation(slideUp 0.75s);
+  @include animation-delay(.85s);
+  background: $light-green;
+  color: $base-font-color;
+  font-size: $font-small;
+  letter-spacing: 1px;
+  margin-bottom: em(50);
+
+  &:hover {
+    background: $light-green;
+    color: $base-font-color;
+    cursor: pointer;
   }
 }
 
@@ -35,42 +99,102 @@
   @include size(em(50) em(50));
   background: image-url('arrow.svg') no-repeat;
   display: block;
-  margin: em(90, 14) auto;
+  margin: $large-spacing auto;
 }
 
-.btn {
-  @include transition (all, linear, 0.3s);
-  border-radius: em(25);
-  padding: em(15) em(40);
-  margin: em(70) auto em(130);
-  text-transform: uppercase;
-}
-
-.header-btn {
-  @extend .btn;
-  @include animation(slideUp 0.75s);
-  @include animation-delay(.85s);
-  background: $bright-green;
-  color: white;
-  margin-bottom: em(50);
-
-  &:hover {
-    color: white;
-    background: $bright-green;
-    border: 1px solid $bright-green;
-    cursor: pointer;
-  }
-}
 
 #my-work {
-  background: $super-light-gray;
+  background: $white;
   text-align: center;
 }
 
 .section-header {
-  color: $light-gray;
-  padding: em(35) 0 em(15);
+  font-weight: 300;
+  padding: $large-spacing;
   text-align: center;
+  text-transform: uppercase;
+}
+
+.grid-row {
+  @include clearfix;
+  margin-bottom: $base-spacing;
+}
+
+.featured-work {
+  color: $base-font-color;
+  margin-bottom: $xlarge-spacing;
+  text-align: left;
+
+  @include media($large-screen-up) {
+    @include omega(2n);
+    @include span-columns(6);
+  }
+
+  &:hover {
+    color: $base-font-color;
+    cursor: pointer;
+  }
+}
+
+.featured-work--1 {
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.20)),
+      image-url("../images/zaarly-shot.png");
+  background-size: cover;
+  background-position: top;
+  height: 250px;
+}
+
+.featured-work--2 {
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.20)),
+      image-url("../images/coupon.png");
+  background-size: cover;
+  background-position: top;
+  height: 250px;
+}
+
+.featured-work--3 {
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.20)),
+      image-url("../images/dashboard.png");
+  background-size: cover;
+  background-position: top;
+  height: 250px;
+}
+
+.featured-work--4 {
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.20)),
+      image-url("../images/pixinote.png");
+  background-size: cover;
+  background-position: top;
+  height: 250px;
+}
+
+.featured-work-description {
+  background-color: lighten($super-light-gray, .4);
+  padding: $large-spacing;
+}
+
+.featured-work--title {
+  font-size: $font-small;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.featured-work--subtitle {
+  font-size: $font-small;
+}
+
+.featured-work--buttons {
+  clear: both;
+  display: block;
+  padding: $large-spacing;
 }
 
 .animated {
@@ -78,77 +202,65 @@
 }
 
 .line {
-  border-bottom: 2px solid $bright-green;
+  border-bottom: 2px solid $light-green;
   margin: 0 auto em(70);
   width: em(250);
 }
 
-li {
-  @include span-columns(3);
-  margin: em(20) 0;
-}
-
-ul {
-  @include shift(.8);
-}
-
-.jribbble li a,
-#instafeed a {
-  display: inline-block;
-  position: relative;
-
-  img {
-    float: left;
-  }
-
-  &:before {
-    @include position(absolute, 0px 0px 0px 0px);
-    @include transition(all ease-out 0.2s);
-    background-color: rgba(black, .5);
-    content: '';
-    opacity: 1;
-  }
-
-  &:hover {
-    &:before {
-      opacity: 0;
-    }
-  }
-}
-
 .green-btn {
   @extend .btn;
-  border: 2px solid $bright-green;
-  color: $bright-green;
+  border: 2px solid $light-green;
+  color: $light-green;
   display: inline-block;
 
   &:hover {
     color: white;
-    background: $bright-green;
-    border: 1px solid $bright-green;
+    background: $light-green;
+    border: 1px solid $light-green;
     cursor: pointer;
   }
 }
 
-.about-me {
-  text-align: center;
+.leadership-section {
+  @include clearfix;
+  margin-top: $base-spacing;
+}
 
-  p {
-    @include span-columns(10);
-    @include shift(1);
-    color: $medium-gray;
-    padding-bottom: em(30);
+.leadership {
+  background: $white;
+  margin-bottom: $base-spacing;
+  min-height: 300px;
+  padding: $large-spacing;
+
+  @include media($large-screen-up) {
+    @include span-columns(6);
+  }
+
+  li {
+    padding-bottom: $small-spacing;
   }
 }
 
-#instafeed {
-  a {
-    margin: em(10);
+.leadership-section-header {
+  padding-bottom: $base-spacing;
+}
+
+a.leadership--title {
+  color: $base-font-color;
+  text-decoration: underline;
+
+  &:hover {
+    color: $base-font-color;
   }
+}
+
+.leadership--subtitle {
+  font-size: $font-small;
 }
 
 .footer {
-  background: $dark-gray;
+  background: $white;
+  clear: both;
   text-align: center;
 
   h2 {
@@ -170,23 +282,18 @@ ul {
 .mail {
   background: image-url('mail.svg') no-repeat;
 }
-
 .twitter {
   background: image-url('twitter.svg') no-repeat;
 }
-
 .dribbble {
   background: image-url('dribbble.svg') no-repeat;
 }
-
 .instagram {
   background: image-url('instagram.svg') no-repeat;
 }
-
 .github {
   background: image-url('github.svg') no-repeat;
 }
-
 .linkedin {
   background: image-url('linkedin.svg') no-repeat;
 }

@@ -6,6 +6,9 @@ $header-font-family: $base-font-family;
 
 // Sizes
 $base-font-size: 1em;
+$font-large: 2.2em;
+$font-medium: 1.5em;
+$font-small: 0.8em;
 $base-line-height: $base-font-size * 1.5;
 $unitless-line-height: $base-line-height / ($base-line-height * 0 + 1); // Strip units from line-height: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#Prefer_unitless_numbers_for_line-height_values
 $header-line-height: $base-font-size * 1.25;
@@ -13,14 +16,16 @@ $base-border-radius: em(3);
 
 // Colors
 $blue: #477DCA;
-$dark-gray: #333;
+$dark-gray: #454545;
 $medium-gray: #5B6163;
 $super-light-gray: #F1F3F3;
 $light-gray: #a6a8ab;
+$light-pink: #ffefef;
 $light-red: #FBE3E4;
 $light-yellow: yellow;
-$light-green: #B5CBC9;
+$light-green: #bff4e4;
 $bright-green: #00f7b1;
+$white: #fff;
 
 // Background Color
 $base-background-color: white;
@@ -37,6 +42,13 @@ $hover-button-color: $hover-link-color;
 
 // Border color
 $base-border-color: $light-gray;
+
+// Spacing
+$base-spacing: 1em;
+$small-spacing: $base-spacing * 0.75;
+$medium-spacing: 1.75em;
+$large-spacing: $base-spacing * 2.5;
+$xlarge-spacing: $base-spacing * 3.5;
 
 // Flash Colors
 $alert-color: $light-yellow;
