@@ -9,12 +9,13 @@ title: Portfolio of Rachel Cope
       -# %a.about-link About Me
     %header.grid-wrapper.grid-small
       %h1.hero-header
-        Hi, I’m Rachel, a Colorado-based interdisciplinary designer focused on human psychology, UX, product & front-end design.
+        Hi, I’m Rachel.
+        <br> A Colorado-based product and front-end designer + writer and speaker.
         Currently at <a href="http://thoughtbot.com">thoughtbot</a>.
-      %a.header-btn(href="mailto:rachelcope@gmail.com") Contact me
+      -# %a.btn(href="mailto:rachelcope@gmail.com") Contact me
       %a.arrow(href='#my-work')
 
-  %section#my-work
+  %section.section#my-work
     .grid-wrapper
       %h4.section-header Recent Work
       .animate
@@ -29,51 +30,63 @@ title: Portfolio of Rachel Cope
         .featured-work--2
         .featured-work-description
           .featured-work--title Android Design
-          .featured-work--subtitle Front-end development rewrite: HTML/SLIM, CSS, SCSS, Bourbon, Neat
+          .featured-work--subtitle Product Design Sprint, Prototyping, Material Design
 
-      %a.featured-work(href="https://www.zaarly.com" target="_blank")
+      %a.featured-work(href="https://dribbble.com/shots/2437377-Accounting-Dashboard" target="_blank")
         .featured-work--3
         .featured-work-description
-          .featured-work--title Zaarly.com (current)
-          .featured-work--subtitle Front-end development rewrite: HTML/SLIM, CSS, SCSS, Bourbon, Neat
+          .featured-work--title Resuelve Tu Contabilidad
+          .featured-work--subtitle User Research, Product Design Sprint, Protoyping, Front-end Development
 
-      %a.featured-work(href="https://www.zaarly.com" target="_blank")
+      %a.featured-work(href="https://thoughtbot.com/product-design-sprint/guide" target="_blank")
         .featured-work--4
         .featured-work-description
-          .featured-work--title Zaarly.com (current)
-          .featured-work--subtitle Front-end development rewrite: HTML/SLIM, CSS, SCSS, Bourbon, Neat
+          .featured-work--title Product Design Sprint Guide
+          .featured-work--subtitle UX, Visual Design, Illustrations, Front-end Development
 
-      .featured-work--buttons
-        %a.btn.header-btn(href="https://dribbble.com/rachelcope") More on Dribbble
-        %a.btn.header-btn(href="https://dribbble.com/rachelcope") More on Behance
+  %section.featured-work--buttons
+    %a.btn.btn--dribbble(href="https://dribbble.com/rachelcope") More on Dribbble
+    %a.btn(href="https://www.behance.net/rachelcope") More on Behance
 
-  %section.leadership-section
-    .leadership
-      %h4.leadership-section-header Speaking
+  %section.section.section--speaking
+    .grid-wrapper.grid-small
+      %h4.section-header Speaking
+
       %ul
-        %li
-          .leadership--title The Product Design Sprint
-          .leadership--subtitle Women Who Code
-        %li
-          .leadership--title Introduction to Design Thinking
-          .leadership--subtitle Turing School of Software and Design
-        %li
-          .leadership--title What Makes You Tick? Lessons from the Enneagram.
-          .leadership--subtitle thoughtbot
-
-    .leadership
-      %h4.leadership-section-header Writing
-      %ul
-        %li
-          = link_to "CSS Animation for Beginners", "https://robots.thoughtbot.com/css-animation-for-beginners", class: "leadership--title"
-          .leadership--subtitle Giant Robots
-        %li
-          = link_to "CSS Transitions and Transforms for Beginners", "https://robots.thoughtbot.com/transitions-and-transforms", class: "leadership--title"
-          .leadership--subtitle Giant Robots
-        %li
-          = link_to "Cultivate Colorado: A Competition for Social Good", "https://robots.thoughtbot.com/cultivate-colorado", class: "leadership--title"
-          %a.leadership--title
-          .leadership--subtitle Giant Robots
+        %li.speaking-event
+          .speaking-logo.speaking-logo--droidcon
+            %img(src="assets/images/droidcon.png")
+          .speaking--title Design sprints, and Why They Lead to Success
+          .speaking--subtitle droidconf
+          .speaking--date London, 2016
+        %li.speaking-event
+          .speaking--logo.speaking-logo--wwc
+            %img(src="assets/images/women-who-code.png")
+          .speaking--title The Product Design Sprint
+          .speaking--subtitle Women Who Code
+          .speaking--date Denver, 2016
+        %li.speaking-event
+          .speaking-logo.speaking-logo--turing
+            %img(src="assets/images/turing.png")
+          .speaking--title Introduction to Design Thinking
+          .speaking--subtitle Turing School of Software and Design
+          .speaking--date Denver, 2015
+        %li.speaking-event
+          .speaking--logo.speaking-logo--thoughtbot
+            %img(src="assets/images/thoughtbot.png")
+          .speaking--title What Makes You Tick? Lessons from the Enneagram.
+          .speaking--subtitle thoughtbot, Lightening Talk
+          .speaking--date Denver, 2016
+  -#
+  -# .writing
+  -#   %h4.speaking-section-header Writing
+  -#   %ul
+  -#     %li
+  -#       = link_to "CSS Animation for Beginners", "https://robots.thoughtbot.com/css-animation-for-beginners", class: "speaking--title"
+  -#       .speaking--subtitle Giant Robots
+  -#     %li
+  -#       = link_to "CSS Transitions and Transforms for Beginners", "https://robots.thoughtbot.com/transitions-and-transforms", class: "speaking--title"
+  -#       .speaking--subtitle Giant Robots
 
   %footer.footer
     .grid-wrapper

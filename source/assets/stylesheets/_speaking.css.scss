@@ -1,0 +1,63 @@
+.section--speaking {
+  background: $very-light-pink;
+  padding: ($xlarge-spacing * 2) 0;
+  position: relative;
+
+  li {
+    padding-bottom: $small-spacing;
+  }
+}
+
+.speaking-event {
+  @include span-columns(6);
+  @include omega(2n);
+  padding-top: $base-spacing;
+}
+
+.speaking-section {
+  @include clearfix;
+  margin-top: $base-spacing;
+}
+
+.speaking-section-header {
+  padding-bottom: $base-spacing;
+}
+
+.speaking-logo {
+  height: 40px;
+}
+
+.speaking-logo--droidcon {
+  width: 40px;
+}
+
+.speaking-logo--wwc {
+  width: 60px;
+}
+
+.speaking-logo--turing {
+  width: 100px;
+}
+
+.speaking-logo--thoughtbot {
+  width: 40px;
+}
+
+a.speaking--title {
+  color: $base-font-color;
+  text-decoration: underline;
+
+  &:hover {
+    color: $base-font-color;
+  }
+}
+
+.speaking--subtitle {
+  color: $light-gray;
+  font-size: $font-small;
+}
+
+.speaking--date {
+  @extend .speaking--subtitle;
+  text-transform: uppercase;
+}
