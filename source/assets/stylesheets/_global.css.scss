@@ -9,6 +9,11 @@ main {
 
 .grid-wrapper {
   @include outer-container;
+  margin: 0 $small-spacing;
+
+  @include media($medium-screen-up) {
+    margin: 0 auto;
+  }
 }
 
 .grid-small {
@@ -26,17 +31,6 @@ main {
   text-align: center;
   text-transform: uppercase;
   padding-bottom: $large-spacing;
-}
-
-.hero {
-  // @include animation(slideDown 0.6s .55s 1 forwards);
-  @include animation-delay(.55s);
-  background: linear-gradient(rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0.70)), image-url("snowmass.png");
-  // background: $white;
-  background-size: cover;
-  border-bottom: 1px solid $super-light-gray;
-  text-align: center;
-  width: auto;
 }
 
 .nav {
@@ -62,13 +56,23 @@ main {
   }
 }
 
+.hero {
+  // @include animation(slideDown 0.6s .55s 1 forwards);
+  @include animation-delay(.55s);
+  background: linear-gradient(rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0.70)), image-url("snowmass.png");
+  // background: $white;
+  background-size: cover;
+  border-bottom: 1px solid $super-light-gray;
+  text-align: center;
+  width: auto;
+}
+
 .hero-header {
   @include animation(slideUp 0.8s .85s 1 backwards);
   color: #404041;
   font-size: $font-medium;
   font-weight: 600;
   line-height: 1.4;
-  margin-bottom: $base-spacing;
   padding: 160px 0 15px;
 
   @include media($large-screen-up) {
@@ -111,7 +115,7 @@ main {
   @include size(em(50) em(50));
   background: image-url('arrow.svg') no-repeat;
   display: block;
-  margin: $large-spacing auto;
+  margin: $xlarge-spacing auto $base-spacing;
 }
 
 
@@ -206,7 +210,14 @@ main {
 
 .featured-work--buttons {
   text-align: center;
-  padding-bottom: $xlarge-spacing;
+
+  .btn {
+    display: block;
+
+    @include media($medium-screen-up) {
+      display: inline-block;
+    }
+  }
 }
 
 .animated {

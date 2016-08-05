@@ -9,9 +9,14 @@
 }
 
 .speaking-event {
-  @include span-columns(6);
-  @include omega(2n);
   padding-top: $base-spacing;
+  text-align: center;
+
+  @include media($medium-screen-up) {
+    @include span-columns(6);
+    @include omega(2n);
+    text-align: left;
+  }
 }
 
 .speaking-section {
@@ -23,8 +28,13 @@
   padding-bottom: $base-spacing;
 }
 
-.speaking-logo {
+.speaking--logo {
   height: 40px;
+  margin: 0 auto $base-spacing;
+
+  @include media($medium-screen-up) {
+    margin: 0;
+  }
 }
 
 .speaking-logo--droidcon {

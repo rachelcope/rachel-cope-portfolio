@@ -10,9 +10,9 @@ title: Portfolio of Rachel Cope
     %header.grid-wrapper.grid-small
       %h1.hero-header
         Hi, I’m Rachel.
-        <br> A Colorado-based product and front-end designer + writer and speaker.
+        <br> Product and front-end designer. Writer. Speaker. Adventurer.
         Currently at <a href="http://thoughtbot.com">thoughtbot</a>.
-      -# %a.btn(href="mailto:rachelcope@gmail.com") Contact me
+      %a.btn(href="mailto:rachelcope@gmail.com") Contact me
       %a.arrow(href='#my-work')
 
   %section.section#my-work
@@ -44,17 +44,16 @@ title: Portfolio of Rachel Cope
           .featured-work--title Product Design Sprint Guide
           .featured-work--subtitle UX, Visual Design, Illustrations, Front-end Development
 
-  %section.featured-work--buttons
+  %section.grid-wrapper.featured-work--buttons
     %a.btn.btn--dribbble(href="https://dribbble.com/rachelcope") More on Dribbble
     %a.btn(href="https://www.behance.net/rachelcope") More on Behance
 
   %section.section.section--speaking
     .grid-wrapper.grid-small
       %h4.section-header Speaking
-
       %ul
         %li.speaking-event
-          .speaking-logo.speaking-logo--droidcon
+          .speaking--logo.speaking-logo--droidcon
             %img(src="assets/images/droidcon.png")
           .speaking--title Design sprints, and Why They Lead to Success
           .speaking--subtitle droidconf
@@ -66,7 +65,7 @@ title: Portfolio of Rachel Cope
           .speaking--subtitle Women Who Code
           .speaking--date Denver, 2016
         %li.speaking-event
-          .speaking-logo.speaking-logo--turing
+          .speaking--logo.speaking-logo--turing
             %img(src="assets/images/turing.png")
           .speaking--title Introduction to Design Thinking
           .speaking--subtitle Turing School of Software and Design
@@ -77,16 +76,15 @@ title: Portfolio of Rachel Cope
           .speaking--title What Makes You Tick? Lessons from the Enneagram.
           .speaking--subtitle thoughtbot, Lightening Talk
           .speaking--date Denver, 2016
-  -#
-  -# .writing
-  -#   %h4.speaking-section-header Writing
-  -#   %ul
-  -#     %li
-  -#       = link_to "CSS Animation for Beginners", "https://robots.thoughtbot.com/css-animation-for-beginners", class: "speaking--title"
-  -#       .speaking--subtitle Giant Robots
-  -#     %li
-  -#       = link_to "CSS Transitions and Transforms for Beginners", "https://robots.thoughtbot.com/transitions-and-transforms", class: "speaking--title"
-  -#       .speaking--subtitle Giant Robots
+
+  .section--writing
+    %h4.section-header Writing
+
+    = link_to "CSS Animation for Beginners", "https://robots.thoughtbot.com/css-animation-for-beginners", class: "speaking--title"
+    .speaking--subtitle Giant Robots
+
+    = link_to "CSS Transitions and Transforms for Beginners", "https://robots.thoughtbot.com/transitions-and-transforms", class: "speaking--title"
+    .speaking--subtitle Giant Robots
 
   %footer.footer
     .grid-wrapper
