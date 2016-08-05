@@ -15,15 +15,16 @@ $header-line-height: $base-font-size * 1.25;
 $base-border-radius: em(3);
 
 // Colors
-$blue: #477DCA;
+$blue: #477dca;
 $dark-gray: #454545;
-$medium-gray: #5B6163;
-$super-light-gray: #F2F4F7;
+$medium-gray: #5b6163;
+$super-light-gray: #f2f4f7;
 $light-gray: #a6a8ab;
 $light-pink: #ffefef;
 $very-light-pink: #fff8f8;
-$light-red: #FBE3E4;
+$light-red: #fbe3e4;
 $light-yellow: yellow;
+$very-light-green: #f1faf7;
 $light-green: #bff4e4;
 $bright-green: #00f7b1;
 $white: #fff;
@@ -34,6 +35,10 @@ $base-background-color: white;
 // Font Colors
 $base-font-color: $dark-gray;
 $base-accent-color: $blue;
+
+// Font weight
+$regular-font-weight: 300;
+$bold-font-weight: 500;
 
 // Link Colors
 $base-link-color: $base-accent-color;
