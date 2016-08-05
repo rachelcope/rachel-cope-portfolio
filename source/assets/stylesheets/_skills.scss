@@ -1,0 +1,14 @@
+.section--skills {
+  @include clearfix;
+  text-align: center;
+}
+
+.skill {
+  background: $pink;
+  border-radius: 35px;
+  color: $white;
+  display: inline-block;
+  font-size: $font-small;
+  margin: $small-spacing $xsmall-spacing 0 0;
+  padding: $xsmall-spacing $large-spacing;
+}

@@ -21,6 +21,7 @@ $medium-gray: #5b6163;
 $super-light-gray: #f2f4f7;
 $light-gray: #a6a8ab;
 $light-pink: #ffefef;
+$pink: #ffa4a4;
 $very-light-pink: #fff8f8;
 $light-red: #fbe3e4;
 $light-yellow: yellow;
@@ -51,6 +52,7 @@ $base-border-color: $light-gray;
 
 // Spacing
 $base-spacing: 1em;
+$xsmall-spacing: $base-spacing * 0.5;
 $small-spacing: $base-spacing * 0.75;
 $medium-spacing: 1.75em;
 $large-spacing: $base-spacing * 2.5;
