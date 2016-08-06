@@ -2,99 +2,103 @@
 title: Portfolio of Rachel Cope
 ---
 
-%main
-  %section.hero
-    .nav
-      .r-icon
-      -# %a.about-link About Me
-    %header.grid-wrapper.grid-small
-      %h1.hero-header
-        Hi, I’m Rachel.
-        <br> Product and front-end designer. Writer. Speaker. Adventurer.
-        Currently at <a href="http://thoughtbot.com">thoughtbot</a>.
-      %a.btn(href="mailto:rachelcope@gmail.com") Contact me
-      %a.arrow(href='#my-work')
+%section.hero
+  .nav
+    .r-icon
+    -# %a.about-link About Me
+  %header.grid-wrapper.grid-small
+    %h1.hero-header
+      Hi, I’m Rachel.
+      <br> Product and front-end designer. Writer. Speaker. Adventurer.
+      Currently at <a href="http://thoughtbot.com">thoughtbot</a>.
+    %a.btn(href="mailto:rachelcope@gmail.com") Contact me
+    %a.arrow(href='#my-work')
 
-  %section.section.section--testimonial
-    .grid-wrapper
-      %h5.testimonial-content “Rachel brings amazing energy, personality, and skill to design that is incredibly difficult to find. She has the rare ability to execute a well crafted user experience from concept to implementation. Our clients always rave about her final products and enjoy working with her immensely - she is a true asset.”
-      .testimonial-author Kyle Fiedler
-      .testimonial-position Chief Design Officer, thoughtbot
+%section.section.section--testimonial
+  .grid-wrapper
+    %h5.testimonial-content “Rachel brings amazing energy, personality, and skill to design that is incredibly difficult to find. She has the rare ability to execute a well crafted user experience from concept to implementation. Our clients always rave about her final products and enjoy working with her immensely - she is a true asset.”
+    .testimonial-author Kyle Fiedler
+    .testimonial-position Chief Design Officer, thoughtbot
 
-  %section.section#my-work
-    .grid-wrapper
-      %h4.section-header Recent Work
-      .animate
+%section.section#my-work
+  .grid-wrapper
+    .section-header Recent Work
+    .animate
 
-      %a.featured-work(href="https://www.zaarly.com" target="_blank")
-        .featured-work--1
-        .featured-work-description
-          .featured-work--title Zaarly.com (current)
-          .featured-work--subtitle Front-end development rewrite: HTML/SLIM, CSS, SCSS, Bourbon, Neat
+    %a.featured-work(href="https://www.zaarly.com" target="_blank")
+      .featured-work--1
+      .featured-work-description
+        .featured-work--title Zaarly.com (current)
+        .featured-work--subtitle Front-end development rewrite: HTML/SLIM, CSS, SCSS, Bourbon, Neat
 
-      %a.featured-work(href="https://dribbble.com/shots/2851503-Android-Material-Design" target="_blank")
-        .featured-work--2
-        .featured-work-description
-          .featured-work--title Android Design
-          .featured-work--subtitle Product Design Sprint, Prototyping, Material Design
+    %a.featured-work(href="https://dribbble.com/shots/2851503-Android-Material-Design" target="_blank")
+      .featured-work--2
+      .featured-work-description
+        .featured-work--title Android Design
+        .featured-work--subtitle Product Design Sprint, Prototyping, Material Design
 
-      %a.featured-work(href="https://dribbble.com/shots/2437377-Accounting-Dashboard" target="_blank")
-        .featured-work--3
-        .featured-work-description
-          .featured-work--title Resuelve Tu Contabilidad
-          .featured-work--subtitle User Research, Product Design Sprint, Protoyping, Front-end Development
+    %a.featured-work(href="https://dribbble.com/shots/2437377-Accounting-Dashboard" target="_blank")
+      .featured-work--3
+      .featured-work-description
+        .featured-work--title Resuelve Tu Contabilidad
+        .featured-work--subtitle User Research, Product Design Sprint, Protoyping, Front-end Development
 
-      %a.featured-work(href="https://thoughtbot.com/product-design-sprint/guide" target="_blank")
-        .featured-work--4
-        .featured-work-description
-          .featured-work--title Product Design Sprint Guide
-          .featured-work--subtitle UX, Visual Design, Illustrations, Front-end Development
+    %a.featured-work(href="https://thoughtbot.com/product-design-sprint/guide" target="_blank")
+      .featured-work--4
+      .featured-work-description
+        .featured-work--title Product Design Sprint Guide
+        .featured-work--subtitle UX, Visual Design, Illustrations, Front-end Development
 
-  %section.grid-wrapper.featured-work--buttons
-    %a.btn.btn--dribbble(href="https://dribbble.com/rachelcope") More on Dribbble
-    %a.btn(href="https://www.behance.net/rachelcope") More on Behance
+%section.grid-wrapper.featured-work--buttons
+  %a.btn.btn--dribbble(href="https://dribbble.com/rachelcope") More on Dribbble
+  %a.btn(href="https://www.behance.net/rachelcope") More on Behance
 
-  %section.section.section--speaking
-    .grid-wrapper.grid-small
-      %h4.section-header Speaking
-      %ul
-        %li.speaking-event
-          .speaking--logo.speaking-logo--droidcon
-            %img(src="assets/images/droidcon.png")
-          .speaking--title Design sprints, and Why They Lead to Success
-          .speaking--subtitle droidconf
-          .speaking--date London, 2016
-        %li.speaking-event
-          .speaking--logo.speaking-logo--wwc
-            %img(src="assets/images/women-who-code.png")
-          .speaking--title The Product Design Sprint
-          .speaking--subtitle Women Who Code
-          .speaking--date Denver, 2016
-        %li.speaking-event
-          .speaking--logo.speaking-logo--turing
-            %img(src="assets/images/turing.png")
-          .speaking--title Introduction to Design Thinking
-          .speaking--subtitle Turing School of Software and Design
-          .speaking--date Denver, 2015
-        %li.speaking-event
-          .speaking--logo.speaking-logo--thoughtbot
-            %img(src="assets/images/thoughtbot.png")
-          .speaking--title What Makes You Tick? Lessons from the Enneagram.
-          .speaking--subtitle thoughtbot, Lightening Talk
-          .speaking--date Denver, 2016
+%section.section.section--speaking
+  .grid-wrapper.grid-small
+    .section-header Speaking
+    %ul
+      %li.speaking-event
+        .speaking--logo.speaking-logo--droidcon
+          %img(src="assets/images/droidcon.png")
+        .speaking--title Design sprints, and Why They Lead to Success
+        .speaking--subtitle droidconf
+        .speaking--date London, October 2016
+      %li.speaking-event
+        .speaking--logo.speaking-logo--wwc
+          %img(src="assets/images/women-who-code.png")
+        .speaking--title The Product Design Sprint
+        .speaking--subtitle Women Who Code
+        .speaking--date Denver, 2016
+      %li.speaking-event
+        .speaking--logo.speaking-logo--turing
+          %img(src="assets/images/turing.png")
+        .speaking--title Introduction to Design Thinking
+        .speaking--subtitle Turing School of Software and Design
+        .speaking--date Denver, 2015
+      %li.speaking-event
+        .speaking--logo.speaking-logo--thoughtbot
+          %img(src="assets/images/thoughtbot.png")
+        .speaking--title What Makes You Tick? Lessons from the Enneagram.
+        .speaking--subtitle thoughtbot, Lightning Talk
+        .speaking--date Denver, 2016
 
-  -# .section--writing
-  -#   %h4.section-header Writing
-  -#
-  -#   = link_to "CSS Animation for Beginners", "https://robots.thoughtbot.com/css-animation-for-beginners", class: "speaking--title"
-  -#   .speaking--subtitle Giant Robots
-  -#
-  -#   = link_to "CSS Transitions and Transforms for Beginners", "https://robots.thoughtbot.com/transitions-and-transforms", class: "speaking--title"
-  -#   .speaking--subtitle Giant Robots
+%section.section.section--writing
+  .grid-wrapper
+    .section-header Writing
+    .writing
+      .writing-image.writing-image--animations
+      .writing-title
+        = link_to "CSS Animation for Beginners", "https://robots.thoughtbot.com/css-animation-for-beginners", class: "speaking--title"
+        .speaking--subtitle Giant Robots
+    .writing
+      .writing-image.writing-image--transitions
+      .writing-title
+        = link_to "CSS Transitions and Transforms for Beginners", "https://robots.thoughtbot.com/transitions-and-transforms", class: "speaking--title"
+        .speaking--subtitle Giant Robots
 
 %section.section.section--skills
   .grid-wrapper.grid-small
-    %h4.section-header Skills
+    .section-header Skills
     .skills
       .skill HTML/HAML/SLIM
       .skill CSS/SCSS
@@ -115,7 +119,6 @@ title: Portfolio of Rachel Cope
 
 %footer.footer
   .grid-wrapper
-    -# %h4.section-header Stay in touch
     %a.mail(href="mailto:rachelcope@gmail.com")
     %a.twitter(href="https://twitter.com/rachelcope")
     %a.dribbble(href="https://dribbble.com/rachelcope")
