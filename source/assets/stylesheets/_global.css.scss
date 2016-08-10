@@ -24,9 +24,10 @@ body {
 
 .section-header {
   font-size: $font-medium;
-  font-weight: 600;
+  font-weight: 500;
   padding-bottom: $large-spacing;
   text-align: left;
+  text-transform: uppercase;
 
   @include media($medium-screen-up) {
     text-align: center;
@@ -59,8 +60,8 @@ body {
 .hero {
   // @include animation(slideDown 0.6s .55s 1 forwards);
   @include animation-delay(.55s);
-  background: linear-gradient(rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0.70)), image-url("snowmass.png");
-  // background: $white;
+  // background: linear-gradient(rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0.70)), image-url("snowmass.png");
+  background: $white;
   background-size: cover;
   border-bottom: 1px solid $super-light-gray;
   text-align: center;
@@ -71,7 +72,7 @@ body {
   @include animation(slideUp 0.8s .85s 1 backwards);
   color: #404041;
   font-size: $font-medium;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.4;
   padding: 160px 0 15px;
 
@@ -85,7 +86,6 @@ body {
     text-decoration: underline;
   }
 }
-
 
 .btn {
   @extend .btn;
@@ -129,14 +129,9 @@ body {
   margin-bottom: $base-spacing;
 }
 
-.featured-work {
+.featured-work-wrapper {
   color: $base-font-color;
   text-align: left;
-
-  @include media($large-screen-up) {
-    @include omega(2n);
-    @include span-columns(6);
-  }
 
   &:hover {
     color: $base-font-color;
@@ -144,37 +139,37 @@ body {
   }
 }
 
+.featured-work {
+  border: 1px solid $super-light-gray;
+  height: 500px;
+  margin-bottom: $base-spacing;
+}
+
 .featured-work--1 {
   background-image:
     linear-gradient(
-      rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.150)),
-      image-url("../images/zaarly-shot.png");
+      rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+      image-url("../images/android-design.png");
   background-size: cover;
   background-position: top;
-  border: 1px solid $super-light-gray;
-  height: 250px;
 }
 
 .featured-work--2 {
   background-image:
     linear-gradient(
-      rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.150)),
-      image-url("../images/coupon.png");
+      rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+      image-url("../images/pds-guide.png");
   background-size: cover;
   background-position: top;
-  height: 250px;
 }
 
 .featured-work--3 {
   background-image:
     linear-gradient(
-      rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.150)),
-      image-url("../images/dashboard.png");
+      rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+      image-url("../images/accounting.png");
   background-size: cover;
   background-position: top;
-  height: 250px;
-  margin-top: $large-spacing;
-
 }
 
 .featured-work--4 {
@@ -184,22 +179,33 @@ body {
       image-url("../images/pds-icons.png");
   background-size: cover;
   background-position: top;
-  height: 250px;
-  margin-top: $large-spacing;
 }
 
-.featured-work-description {
-  background-color: lighten($super-light-gray, 5%);
-  padding: $large-spacing 0;
+.featured-work-description-wrapper {
+  align-items: center;
+  background-color: $white;
+  display: flex;
+  height: 250px;
+  margin: ($xlarge-spacing * 2) $xlarge-spacing 0 0;
+  padding: ($xlarge-spacing * 1.5) $xlarge-spacing;
+  text-align: right;
+
+  @include media($medium-screen-up) {
+    margin-left: 55%
+  }
 }
 
 .featured-work--title {
-  font-size: $base-font-size;
-  font-weight: 600;
+  float: right;
+  font-size: $font-medium;
+  font-weight: 500;
 }
 
 .featured-work--subtitle {
+  color: $medium-gray;
   font-size: $font-small;
+  float: right;
+  padding-top: $small-spacing;
 
   .btn {
     &:first-of-type {
