@@ -1,5 +1,5 @@
 .section--speaking {
-  background: linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)), image-url("talk.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.90)), image-url("talk.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -11,27 +11,73 @@
   }
 }
 
-.speaking-event {
+.speaking-section {
+  @include clearfix;
+  margin-top: $base-spacing;
+}
+
+.section-header--speaking {
+  padding-bottom: $base-spacing;
+}
+
+.speaking-event--main {
   padding-top: $base-spacing;
-  text-align: center;
 
   @include media($medium-screen-up) {
     @include span-columns(6);
-    @include omega(2n);
+    @include shift(2);
+    padding-right: $large-spacing;
     text-align: left;
   }
 }
 
-.speaking-section {
-  @include clearfix;
-  margin-top: $base-spacing;
+.speaking-event--past {
+  padding-top: $large-spacing;
+
+  @include media($medium-screen-up) {
+    @include span-columns(4);
+    text-align: left;
+  }
 }
 
 .speaking-section-header {
   padding-bottom: $base-spacing;
 }
 
-.speaking--logo {
+.speaking-event {
+  @include clearfix;
+  padding-top: $small-spacing;
+}
+
+.speaking-event-type {
+  color: $light-gray;
+  font-size: $font-small;
+  padding-bottom: $base-spacing;
+  text-transform: uppercase;
+}
+
+.speaking-summary {
+  color: $medium-gray;
+  font-size: $font-small;
+  padding: $small-spacing 0;
+}
+
+.speaking-event-details {
+  display: inline-block;
+  float: left;
+  padding-left: $small-spacing;
+  width: 75%;
+}
+
+.speaking-title--main {
+  clear: both;
+  font-weight: 400;
+  padding-top: $small-spacing;
+}
+
+.speaking-logo {
+  display: inline-block;
+  float: left;
   height: 40px;
   margin: 0 auto $base-spacing;
 
@@ -41,22 +87,19 @@
 }
 
 .speaking-logo--droidcon {
-  width: 40px;
+  width: 175px;
 }
 
-.speaking-logo--wwc {
-  width: 60px;
-}
-
+.speaking-logo--wwc,
 .speaking-logo--turing {
-  width: 100px;
+  width: 30px;
 }
 
 .speaking-logo--thoughtbot {
-  width: 40px;
+  width: 25px;
 }
 
-a.speaking--title {
+a.speaking-title {
   color: $base-font-color;
   text-decoration: underline;
 
@@ -65,12 +108,7 @@ a.speaking--title {
   }
 }
 
-.speaking--subtitle {
+.speaking-subtitle {
   color: $light-gray;
   font-size: $font-small;
-}
-
-.speaking--date {
-  @extend .speaking--subtitle;
-  text-transform: uppercase;
 }

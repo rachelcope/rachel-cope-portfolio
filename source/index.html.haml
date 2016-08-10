@@ -54,33 +54,43 @@ title: Portfolio of Rachel Cope
   %a.btn(href="https://www.behance.net/rachelcope") More on Behance
 
 %section.section.section--speaking
-  .grid-wrapper.grid-small
-    .section-header Speaking
-    %ul
+  .grid-wrapper
+    .section-header.section-header--speaking Speaking
+
+    .speaking-event--main
+      .speaking-event-type Upcoming Talk
+      .speaking-logo.speaking-logo--droidcon
+        %img(src="assets/images/droidcon.png")
+      %h3.speaking-title--main Product Design Sprints, and Why They Lead to Success
+      .speaking-summary
+        As a developer, it can be challenging to hone in on a plan for an MVP that looks
+        great and can be implemented within the time and budget scope. This talk
+        introduces the 5-phase Product Design Sprint process. Starting
+        with design thinking and ending with a user-tested prototype, a Product
+        Design Sprint orients the team and effort toward a mutual goal and
+        improves the changes of making something people want.
+      .speaking-subtitle droidconf London | London, October 2016
+
+    %ul.speaking-event--past
+      .speaking-event-type Past Talks
       %li.speaking-event
-        .speaking--logo.speaking-logo--droidcon
-          %img(src="assets/images/droidcon.png")
-        .speaking--title Design sprints, and Why They Lead to Success
-        .speaking--subtitle droidconf
-        .speaking--date London, October 2016
-      %li.speaking-event
-        .speaking--logo.speaking-logo--wwc
+        .speaking-logo.speaking-logo--wwc
           %img(src="assets/images/women-who-code.png")
-        .speaking--title The Product Design Sprint
-        .speaking--subtitle Women Who Code
-        .speaking--date Denver, 2016
+        .speaking-event-details
+          .speaking-title The Product Design Sprint
+          .speaking-subtitle Women Who Code | Denver, 2016
       %li.speaking-event
-        .speaking--logo.speaking-logo--turing
+        .speaking-logo.speaking-logo--turing
           %img(src="assets/images/turing.png")
-        .speaking--title Introduction to Design Thinking
-        .speaking--subtitle Turing School of Software and Design
-        .speaking--date Denver, 2015
+        .speaking-event-details
+          .speaking-title Introduction to Design Thinking
+          .speaking-subtitle Turing School of Software and Design | Denver, 2015
       %li.speaking-event
-        .speaking--logo.speaking-logo--thoughtbot
+        .speaking-logo.speaking-logo--thoughtbot
           %img(src="assets/images/thoughtbot.png")
-        .speaking--title What Makes You Tick? Lessons from the Enneagram.
-        .speaking--subtitle thoughtbot, Lightning Talk
-        .speaking--date Denver, 2016
+        .speaking-event-details
+          .speaking-title What Makes You Tick? Lessons from the Enneagram.
+          .speaking-subtitle thoughtbot | Denver, 2016
 
 %section.section.section--writing
   .grid-wrapper
@@ -88,13 +98,13 @@ title: Portfolio of Rachel Cope
     .writing
       .writing-image.writing-image--animations
       .writing-title
-        = link_to "CSS Animation for Beginners", "https://robots.thoughtbot.com/css-animation-for-beginners", class: "speaking--title"
-        .speaking--subtitle Giant Robots
+        = link_to "CSS Animation for Beginners", "https://robots.thoughtbot.com/css-animation-for-beginners", class: "speaking-title"
+        .speaking-subtitle Giant Robots
     .writing
       .writing-image.writing-image--transitions
       .writing-title
-        = link_to "CSS Transitions and Transforms for Beginners", "https://robots.thoughtbot.com/transitions-and-transforms", class: "speaking--title"
-        .speaking--subtitle Giant Robots
+        = link_to "CSS Transitions and Transforms for Beginners", "https://robots.thoughtbot.com/transitions-and-transforms", class: "speaking-title"
+        .speaking-subtitle Giant Robots
 
 %section.section.section--skills
   .grid-wrapper.grid-small

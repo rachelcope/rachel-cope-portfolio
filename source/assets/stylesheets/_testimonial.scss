@@ -5,7 +5,11 @@
 
 .testimonial-content {
   font-weight: $regular-font-weight;
-  font-size: 1.7em;
+  font-size: $base-font-size;
+
+  @include media($medium-screen-up) {
+    font-size: 1.7em;
+  }
 }
 
 .testimonial-author {

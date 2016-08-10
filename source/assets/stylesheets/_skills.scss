@@ -1,6 +1,9 @@
 .section--skills {
   @include clearfix;
-  text-align: center;
+
+  @include media($medium-screen-up) {
+    text-align: center;
+  }
 }
 
 .skill {
