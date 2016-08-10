@@ -1,8 +1,9 @@
 .section--speaking {
-  background: linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)), image-url("pds.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)), image-url("talk.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  border-top:  15px solid $light-green;
   position: relative;
 
   li {
