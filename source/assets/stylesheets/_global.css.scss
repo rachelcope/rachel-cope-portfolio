@@ -75,23 +75,38 @@ body,
   width: auto;
 }
 
-.hero-header {
+.hero-headers {
   @include animation(slideUp 0.8s .85s 1 backwards);
+}
+
+.hero-header {
   color: #404041;
-  font-size: $font-medium;
+  font-size: $font-large;
   font-weight: 500;
   line-height: 1.4;
-  padding: 160px 0 15px;
 
   @include media($large-screen-up) {
-    font-size: $font-large;
-    margin-bottom: $base-spacing;
+    font-size: $font-xlarge;
   }
+}
 
-  a {
-    color: $base-font-color;
-    text-decoration: underline;
-  }
+.hero-subheader {
+  color: $light-gray;
+  font-weight: 400;
+  margin-bottom: $large-spacing;
+  margin-top: $small-spacing;
+}
+
+
+.hero-content {
+  // align-items: center;
+  // display: flex;
+  // height: 300px;
+  // flex-wrap: nowrap;
+
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .btn {
