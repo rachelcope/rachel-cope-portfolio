@@ -7,8 +7,8 @@
     = stylesheet_link_tag "application"
 
     %a(href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css')
-    %link{rel: "icon", type: "image/ico", href: "/favicon.ico"}
-
+    -# %link{rel: "icon", type: "image/ico", href: "/favicon.ico"}
+    %link{rel: "icon", type: "image/ico", href: "assets/images/favicon.ico"}
   %body{class: page_classes}
     = yield
     = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js", "application"
