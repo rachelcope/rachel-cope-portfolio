@@ -8,7 +8,7 @@ Getting Started
 ---------------
 Run the server
 ```
-middleman
+bundle exec middleman
 ```
 
 Deploy to Github Pages
