@@ -18,32 +18,41 @@ title: Portfolio of Rachel Cope
     %h5.testimonial-content “Rachel brings amazing energy, personality, and skill to design that is incredibly difficult to find. She has the rare ability to execute a well crafted user experience from concept to implementation. Our clients always rave about her final products and enjoy working with her immensely - she is a true asset.”
     .testimonial-author Kyle Fiedler
     .testimonial-position Chief Design Officer, thoughtbot
+  %a.btn.testimonial-button(href="") View More References on LinkedIn
 
-%section.section#my-work
-  .section-header Recent Work
-  .animate
-
-  %a.featured-work-wrapper(href="https://dribbble.com/shots/2851503-Android-Material-Design" target="_blank")
-    .featured-work--1.featured-work
-      .featured-work-description-wrapper
+%section.section#my-work.section--work
+  .grid-wrapper
+    .section-header Featured Work
+    .animate
+    .grid-row
+      %a.featured-work-wrapper(href="https://dribbble.com/shots/3291855-Mortgage-Application-Prototype" target="_blank")
+        .featured-work.featured-work--1
+        .featured-work-description-wrapper
         .featured-work-description
-          .featured-work--title Android Material Design
-          .featured-work--subtitle Product Design Sprint | Prototyping | User Testing | Material Design
+          .featured-work--title Mortgage Application Prototype
+          .featured-work--subtitle UX| Prototyping | Visual Design | Mobile Design
 
-  %a.featured-work-wrapper(href="https://thoughtbot.com/product-design-sprint/guide" target="_blank")
-    .featured-work--2.featured-work
-      .featured-work-description-wrapper
+      %a.featured-work-wrapper(href="https://thoughtbot.com/product-design-sprint/guide" target="_blank")
+        .featured-work.featured-work--2
+        .featured-work-description-wrapper
         .featured-work-description
           .featured-work--title Design Sprint Guide
           .featured-work--subtitle UX | Visual Design | Illustrations | Front-end Development
 
+    .grid-row
+      %a.featured-work-wrapper(href="https://dribbble.com/shots/2437377-Accounting-Dashboard" target="_blank")
+        .featured-work--3.featured-work
+        .featured-work-description-wrapper
+          .featured-work-description
+            .featured-work--title Accounting Software Redesign
+            .featured-work--subtitle User Research | Product Design Sprint | Protoyping | Front-end Development
 
-  %a.featured-work-wrapper(href="https://dribbble.com/shots/2437377-Accounting-Dashboard" target="_blank")
-    .featured-work--3.featured-work
-      .featured-work-description-wrapper
+      %a.featured-work-wrapper(href="https://thoughtbot.com/product-design-sprint/guide" target="_blank")
+        .featured-work.featured-work--4
+        .featured-work-description-wrapper
         .featured-work-description
-          .featured-work--title Accounting Software Redesign
-          .featured-work--subtitle User Research | Product Design Sprint | Protoyping | Front-end Development
+          .featured-work--title Android Material Design
+          .featured-work--subtitle Product Design Sprint | Prototyping | User Testing | Material Design
 
 %section.grid-wrapper.featured-work--buttons
   %a.btn.btn--dribbble(href="https://dribbble.com/rachelcope") More on Dribbble
@@ -54,7 +63,6 @@ title: Portfolio of Rachel Cope
     .section-header.section-header--speaking Speaking
 
     .speaking-event--main
-      .speaking-event-type Upcoming Talk
       .speaking-logo.speaking-logo--droidcon
         %img(src="assets/images/droidcon.png")
       %h3.speaking-title--main Product Design Sprints, and Why They Lead to Success
@@ -68,7 +76,6 @@ title: Portfolio of Rachel Cope
       .speaking-subtitle droidconf London | London, October 2016
 
     %ul.speaking-event--past
-      .speaking-event-type Past Talks
       %li.speaking-event
         .speaking-logo.speaking-logo--wwc
           %img(src="assets/images/women-who-code.png")

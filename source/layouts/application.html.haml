@@ -3,10 +3,13 @@
   %head
     %meta{charset: "utf-8"}
     %meta{content: "IE=edge,chrome=1", http: {equiv: "X-UA-Compatible"}}
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}
+
     %title= current_page.data.title || "Rachel Cope Portfolio"
     = stylesheet_link_tag "application"
 
-    %a(href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css')
+    %link(href='https://fonts.googleapis.com/css?family=Work+Sans' rel='stylesheet' type='text/css')
+
     -# %link{rel: "icon", type: "image/ico", href: "/favicon.ico"}
     %link{rel: "icon", type: "image/ico", href: "assets/images/favicon.ico"}
   %body{class: page_classes}

@@ -12,21 +12,33 @@ body,
 
 .grid-wrapper {
   @include outer-container;
-  margin: 0 $small-spacing;
+  margin: 0 $medium-spacing;
 
-  @include media($medium-screen-up) {
+  @include media($large-screen-up) {
     margin: 0 auto;
   }
 }
 
 .grid-small {
   @include media($large-screen-up) {
-    padding: 0 ($xlarge-spacing * 4);
+    padding: 0 ($large-spacing * 4);
+  }
+}
+
+.grid-row {
+  @include clearfix;
+
+  &:first-of-type {
+    margin-bottom: $xlarge-spacing;
   }
 }
 
 .section {
   padding: $xlarge-spacing 0;
+
+  &--work {
+    padding-bottom: 0;
+  }
 }
 
 .section-header {
@@ -92,18 +104,15 @@ body,
 
 .hero-subheader {
   color: $light-gray;
-  font-weight: 300;
+  font-size: $font-size-24;
+  font-weight: 200;
+  line-height: 1.4;
   margin-bottom: $large-spacing;
   margin-top: $small-spacing;
 }
 
 
 .hero-content {
-  // align-items: center;
-  // display: flex;
-  // height: 300px;
-  // flex-wrap: nowrap;
-
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -119,7 +128,7 @@ body,
   color: $base-font-color;
   font-size: $font-small;
   letter-spacing: 1px;
-  margin: em(70) auto em(130);
+  margin: $large-spacing auto;
   padding: $base-spacing ($large-spacing * 1.5);
 
   &:hover {
@@ -140,20 +149,18 @@ body,
   margin: $xlarge-spacing auto $base-spacing;
 }
 
-
-#my-work {
-  background: $white;
-  text-align: center;
-}
-
-.grid-row {
-  @include clearfix;
-  margin-bottom: $base-spacing;
-}
-
 .featured-work-wrapper {
+  @include clearfix;
+  float: left;
   color: $base-font-color;
+  margin-bottom: $large-spacing;
   text-align: left;
+
+  @include media($large-screen-up) {
+    @include span-columns(6);
+    @include omega(2n);
+    margin-bottom: $xlarge-spacing;
+  }
 
   &:hover {
     color: $base-font-color;
@@ -162,63 +169,41 @@ body,
 }
 
 .featured-work {
+  @include clearfix;
   border: 1px solid $super-light-gray;
   height: 500px;
   margin-bottom: $base-spacing;
 }
 
 .featured-work--1 {
-  background-image:
-    linear-gradient(
-      rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
-      image-url("../images/android.png");
+  background-image:image-url("../images/loanapplication.png");
   background-size: cover;
   background-position: top;
 }
 
 .featured-work--2 {
-  background-image:
-    linear-gradient(
-      rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
-      image-url("../images/pds-guide.png");
+  background-image: image-url("../images/pds-guide.png");
   background-size: cover;
   background-position: top;
 }
 
 .featured-work--3 {
-  background-image:
-    linear-gradient(
-      rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
-      image-url("../images/accounting.png");
+  background-image: image-url("../images/accounting.png");
   background-size: cover;
   background-position: top;
 }
 
 .featured-work--4 {
-  background-image:
-    linear-gradient(
-      rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.150)),
-      image-url("../images/pds-icons.png");
+  background-image: image-url("../images/android.png");
   background-size: cover;
   background-position: top;
 }
 
 .featured-work-description-wrapper {
-  align-items: center;
-  background-color: $white;
-  display: flex;
-  height: 250px;
-  margin: ($xlarge-spacing * 2) $xlarge-spacing 0 0;
-  padding: ($xlarge-spacing * 1.5) $xlarge-spacing;
-  text-align: right;
-
-  @include media($medium-screen-up) {
-    margin-left: 55%
-  }
+  @include clearfix;
 }
 
 .featured-work--title {
-  float: right;
   font-size: $font-medium;
   font-weight: 400;
 }
@@ -226,8 +211,6 @@ body,
 .featured-work--subtitle {
   color: $light-gray;
   font-size: $font-small;
-  float: right;
-  padding-top: $small-spacing;
 
   .btn {
     &:first-of-type {
@@ -238,6 +221,7 @@ body,
 
 .featured-work--buttons {
   text-align: center;
+  margin-bottom: $medium-spacing;
 
   .btn {
     display: block;
