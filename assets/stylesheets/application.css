@@ -1,0 +1,1273 @@
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE 8/9.
+ */
+/* line 12, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block; }
+
+/*
+ * Corrects `inline-block` display not defined in IE 8/9.
+ */
+/* line 30, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 41, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 8/9.
+ */
+/* line 50, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+[hidden] {
+  display: none; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Sets default font family to sans-serif.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 64, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */ }
+
+/*
+ * Removes default margin.
+ */
+/* line 74, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 86, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+a:focus {
+  outline: thin dotted; }
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+/* line 94, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
+ * Safari 5, and Chrome.
+ */
+/* line 108, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+h1 {
+  font-size: 2em; }
+
+/*
+ * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 116, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/*
+ * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 124, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+b,
+strong {
+  font-weight: bold; }
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+/* line 133, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+dfn {
+  font-style: italic; }
+
+/*
+ * Addresses styling not present in IE 8/9.
+ */
+/* line 141, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/*
+ * Corrects font family set oddly in Safari 5 and Chrome.
+ */
+/* line 151, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+/* line 163, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+/*
+ * Sets consistent quote types.
+ */
+/* line 173, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+/* line 181, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+small {
+  font-size: 80%; }
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 189, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 197, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+sup {
+  top: -0.5em; }
+
+/* line 201, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * Removes border when inside `a` element in IE 8/9.
+ */
+/* line 213, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+img {
+  border: 0; }
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+/* line 221, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE 8/9 and Safari 5.
+ */
+/* line 233, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+figure {
+  margin: 0; }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Define consistent border, margin, and padding.
+ */
+/* line 245, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/*
+ * 1. Corrects color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 256, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/*
+ * 1. Corrects font family not being inherited in all browsers.
+ * 2. Corrects font size not being inherited in all browsers.
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
+ */
+/* line 267, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/*
+ * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 281, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+button,
+input {
+  line-height: normal; }
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 294, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+/* line 306, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+button[disabled],
+input[disabled] {
+  cursor: default; }
+
+/*
+ * 1. Addresses box sizing set to `content-box` in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ */
+/* line 316, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 328, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 340, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/*
+ * Removes inner padding and border in Firefox 4+.
+ */
+/* line 349, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/*
+ * 1. Removes default vertical scrollbar in IE 8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+/* line 360, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+/* line 373, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/vendor/normalize.css */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 2, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/neat-1.6.0/app/assets/stylesheets/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 1, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/extends/_button.scss */
+button,
+input[type="submit"] {
+  -webkit-font-smoothing: antialiased;
+  background-color: #477dca;
+  border-radius: 0.1875em;
+  color: white;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1;
+  padding: .75em 1em;
+  text-decoration: none; }
+  /* line 13, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/extends/_button.scss */
+  button:hover,
+  input[type="submit"]:hover {
+    background-color: #2c5999;
+    color: white; }
+
+/* line 1, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_typography.scss */
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: white;
+  color: #454545;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5; }
+
+/* line 10, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.25rem;
+  margin: 0;
+  text-rendering: optimizeLegibility; }
+
+/* line 17, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_typography.scss */
+h1 {
+  font-size: 5rem;
+  font-weight: 300; }
+
+/* line 22, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_typography.scss */
+h2 {
+  font-size: 2.25rem;
+  font-weight: 300; }
+
+/* line 27, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_typography.scss */
+h3 {
+  font-size: 1.75rem;
+  line-height: 1.2; }
+
+/* line 32, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_typography.scss */
+h4 {
+  font-size: 1.5rem;
+  font-weight: 300; }
+
+/* line 37, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_typography.scss */
+h5 {
+  font-size: 1.25rem; }
+
+/* line 41, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_typography.scss */
+h6 {
+  font-size: 1rem; }
+
+/* line 45, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_typography.scss */
+p {
+  margin: 0 0 0.75rem; }
+
+/* line 49, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_typography.scss */
+a {
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+  color: #477dca;
+  text-decoration: none; }
+  /* line 54, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_typography.scss */
+  a:hover {
+    color: #2c5999;
+    cursor: pointer; }
+  /* line 59, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_typography.scss */
+  a:active, a:focus {
+    color: #2c5999;
+    outline: none; }
+
+/* line 65, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_typography.scss */
+hr {
+  border-bottom: 1px solid #a6a8ab;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.5rem 0; }
+
+/* line 73, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_typography.scss */
+img {
+  margin: 0;
+  max-width: 100%; }
+
+/* line 78, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_typography.scss */
+blockquote {
+  border-left: 2px solid #a6a8ab;
+  color: #6b6b6b;
+  margin: 1.5rem 0;
+  padding-left: 0.75rem; }
+
+/* line 85, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_typography.scss */
+cite {
+  color: #858585;
+  font-style: italic; }
+  /* line 89, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_typography.scss */
+  cite:before {
+    content: '\2014 \00A0'; }
+
+/* line 1, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_forms.scss */
+fieldset {
+  background: #c0c2c4;
+  border: 1px solid #a6a8ab;
+  margin: 0 0 0.75rem 0;
+  padding: 1.5rem; }
+
+/* line 8, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_forms.scss */
+input,
+label,
+select {
+  display: block;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem; }
+
+/* line 16, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_forms.scss */
+label {
+  font-weight: bold;
+  margin-bottom: 0.375rem; }
+  /* line 20, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_forms.scss */
+  label.required:after {
+    content: "*"; }
+  /* line 24, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_forms.scss */
+  label abbr {
+    display: none; }
+
+/* line 29, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_forms.scss */
+textarea,
+input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"],
+select[multiple=multiple] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: border-color;
+  -moz-transition: border-color;
+  transition: border-color;
+  background-color: white;
+  border-radius: 0.1875em;
+  border: 1px solid #a6a8ab;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  padding: 0.5rem 0.5rem;
+  width: 100%; }
+  /* line 44, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_forms.scss */
+  textarea:hover,
+  input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover,
+  select[multiple=multiple]:hover {
+    border-color: #8c8e92; }
+  /* line 48, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_forms.scss */
+  textarea:focus,
+  input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
+  select[multiple=multiple]:focus {
+    border-color: #477dca;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
+    outline: none; }
+
+/* line 55, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_forms.scss */
+textarea {
+  resize: vertical; }
+
+/* line 59, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none; }
+
+/* line 63, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_forms.scss */
+input[type="checkbox"], input[type="radio"] {
+  display: inline;
+  margin-right: 0.375rem; }
+
+/* line 68, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_forms.scss */
+input[type="file"] {
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  width: 100%; }
+
+/* line 74, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_forms.scss */
+select {
+  width: auto;
+  max-width: 100%;
+  margin-bottom: 1.5rem; }
+
+/* line 1, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_tables.scss */
+table {
+  border-collapse: collapse;
+  margin: 0.75rem 0;
+  table-layout: fixed;
+  width: 100%; }
+
+/* line 8, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_tables.scss */
+th {
+  border-bottom: 1px solid #7f8286;
+  font-weight: bold;
+  padding: 0.75rem 0;
+  text-align: left; }
+
+/* line 15, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_tables.scss */
+td {
+  border-bottom: 1px solid #a6a8ab;
+  padding: 0.75rem 0; }
+
+/* line 20, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_tables.scss */
+tr, td, th {
+  vertical-align: middle; }
+
+/* line 1, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_lists.scss */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+/* line 19, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_lists.scss */
+dl {
+  margin-bottom: 0.75rem; }
+  /* line 22, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_lists.scss */
+  dl dt {
+    font-weight: bold;
+    margin-top: 0.75rem; }
+  /* line 27, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_lists.scss */
+  dl dd {
+    margin: 0; }
+
+/* line 1, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/base/_buttons.scss */
+button,
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+
+/* line 1, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+body {
+  border-top: 15px solid #F2F1F2; }
+
+/* line 6, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+html,
+body,
+.hero {
+  width: 100%;
+  height: 100%; }
+
+/* line 13, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.grid-wrapper {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 1.75em; }
+  /* line 15, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+  .grid-wrapper:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (min-width: 53.75em) {
+    /* line 13, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+    .grid-wrapper {
+      margin: 0 auto; } }
+
+@media screen and (min-width: 53.75em) {
+  /* line 22, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+  .grid-small {
+    padding: 0 10em; } }
+
+/* line 15, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+.grid-row:after {
+  content: "";
+  display: table;
+  clear: both; }
+/* line 31, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.grid-row:first-of-type {
+  margin-bottom: 5em; }
+
+/* line 36, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.section {
+  padding: 5em 0; }
+  /* line 39, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+  .section--work {
+    padding-bottom: 0; }
+
+/* line 44, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.section-header {
+  font-size: 2rem;
+  font-weight: 500;
+  padding-bottom: 2.5em;
+  text-align: left;
+  text-transform: uppercase; }
+  @media screen and (min-width: 40em) {
+    /* line 44, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+    .section-header {
+      text-align: center; } }
+
+/* line 56, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.nav {
+  padding: 1.75em 2.5em 0; }
+
+/* line 61, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.r-icon {
+  height: 2em;
+  width: 3em;
+  background: url("../images/arrrr.svg");
+  background-repeat: no-repeat;
+  float: left; }
+
+/* line 68, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.about-link {
+  color: #454545;
+  font-size: 0.95rem;
+  float: right;
+  letter-spacing: 1px; }
+  /* line 74, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+  .about-link:hover {
+    color: #454545; }
+
+/* line 79, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.hero {
+  -webkit-animation-delay: 0.55s;
+  -moz-animation-delay: 0.55s;
+  animation-delay: 0.55s;
+  background: #fff;
+  background-size: cover;
+  border-bottom: 1px solid #f2f4f7;
+  text-align: center;
+  width: auto; }
+
+/* line 90, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.hero-headers {
+  -webkit-animation: slideUp 0.8s 0.85s 1 backwards;
+  -moz-animation: slideUp 0.8s 0.85s 1 backwards;
+  animation: slideUp 0.8s 0.85s 1 backwards; }
+
+/* line 94, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.hero-header {
+  color: #404041;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.4; }
+  @media screen and (min-width: 53.75em) {
+    /* line 94, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+    .hero-header {
+      font-size: 3.5rem; } }
+
+/* line 105, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.hero-subheader {
+  color: #a6a8ab;
+  font-size: 1.5rem;
+  font-weight: 200;
+  line-height: 1.4;
+  margin-bottom: 2.5em;
+  margin-top: 0.75em; }
+
+/* line 115, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.hero-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+
+/* line 121, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.btn, .green-btn {
+  -webkit-animation: slideUp 0.75s;
+  -moz-animation: slideUp 0.75s;
+  animation: slideUp 0.75s;
+  -webkit-animation-delay: 0.85s;
+  -moz-animation-delay: 0.85s;
+  animation-delay: 0.85s;
+  -webkit-transition: all, linear, 0.3s;
+  -moz-transition: all, linear, 0.3s;
+  transition: all, linear, 0.3s;
+  background: #F2F1F2;
+  border-radius: 1.5625em;
+  color: #454545;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  margin: 2.5em auto;
+  padding: 1em 3.75em; }
+  /* line 134, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+  .btn:hover, .green-btn:hover {
+    background: #F2F1F2;
+    color: #454545;
+    cursor: pointer; }
+
+/* line 141, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.btn--dribbble {
+  margin-right: 0.75em; }
+
+/* line 145, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.arrow {
+  height: 3.125em;
+  width: 3.125em;
+  background: url("../images/arrow.svg") no-repeat;
+  display: block;
+  margin: 5em auto 1em; }
+
+/* line 152, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.featured-work-wrapper {
+  float: left;
+  color: #454545;
+  margin-bottom: 2.5em;
+  text-align: left; }
+  /* line 15, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+  .featured-work-wrapper:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (min-width: 53.75em) {
+    /* line 152, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+    .featured-work-wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-bottom: 5em; }
+      /* line 38, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
+      .featured-work-wrapper:last-child {
+        margin-right: 0; }
+      /* line 52, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/neat-1.6.0/app/assets/stylesheets/grid/_omega.scss */
+      .featured-work-wrapper:nth-child(2n) {
+        margin-right: 0; }
+      /* line 57, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/neat-1.6.0/app/assets/stylesheets/grid/_omega.scss */
+      .featured-work-wrapper:nth-child(2n+1) {
+        clear: left; } }
+  /* line 165, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+  .featured-work-wrapper:hover {
+    color: #454545;
+    cursor: pointer; }
+
+/* line 171, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.featured-work {
+  border: 1px solid #f2f4f7;
+  height: 500px;
+  margin-bottom: 1em; }
+  /* line 15, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+  .featured-work:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 178, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.featured-work--1 {
+  background-image: url("../images/loanapplication.png");
+  background-size: cover;
+  background-position: top; }
+
+/* line 184, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.featured-work--2 {
+  background-image: url("../images/pds-guide.png");
+  background-size: cover;
+  background-position: top; }
+
+/* line 190, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.featured-work--3 {
+  background-image: url("../images/accounting.png");
+  background-size: cover;
+  background-position: top; }
+
+/* line 196, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.featured-work--4 {
+  background-image: url("../images/android.png");
+  background-size: cover;
+  background-position: top; }
+
+/* line 15, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+.featured-work-description-wrapper:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* line 206, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.featured-work--title {
+  font-size: 2rem;
+  font-weight: 400; }
+
+/* line 211, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.featured-work--subtitle {
+  color: #a6a8ab;
+  font-size: 0.95rem; }
+  /* line 216, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+  .featured-work--subtitle .btn:first-of-type, .featured-work--subtitle .green-btn:first-of-type {
+    margin-right: 0.75em; }
+
+/* line 222, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.featured-work--buttons {
+  text-align: center;
+  margin-bottom: 1.75em; }
+  /* line 226, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+  .featured-work--buttons .btn, .featured-work--buttons .green-btn {
+    display: block; }
+    @media screen and (min-width: 40em) {
+      /* line 226, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+      .featured-work--buttons .btn, .featured-work--buttons .green-btn {
+        display: inline-block; } }
+
+/* line 235, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.animated {
+  -webkit-animation: slideUp 0.75s;
+  -moz-animation: slideUp 0.75s;
+  animation: slideUp 0.75s; }
+
+/* line 239, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.line {
+  border-bottom: 2px solid #F2F1F2;
+  margin: 0 auto 4.375em;
+  width: 15.625em; }
+
+/* line 245, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.green-btn {
+  border: 2px solid #F2F1F2;
+  color: #F2F1F2;
+  display: inline-block; }
+  /* line 251, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+  .green-btn:hover {
+    color: white;
+    background: #F2F1F2;
+    border: 1px solid #F2F1F2;
+    cursor: pointer; }
+
+/* line 259, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.find-me-online {
+  clear: both;
+  text-align: center;
+  padding: 5em 0 1em; }
+  /* line 264, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+  .find-me-online h2 {
+    color: #a6a8ab; }
+  /* line 268, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+  .find-me-online a {
+    height: 3.125em;
+    width: 3.125em;
+    display: inline-block;
+    margin: 0.625em 0.625em 3.125em;
+    fill-color: red; }
+    /* line 274, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+    .find-me-online a:hover {
+      cursor: pointer; }
+
+/* line 280, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.mail {
+  background: url("../images/mail.svg") no-repeat; }
+
+/* line 283, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.twitter {
+  background: url("../images/twitter.svg") no-repeat; }
+
+/* line 286, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.dribbble {
+  background: url("../images/dribbble.svg") no-repeat; }
+
+/* line 289, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.instagram {
+  background: url("../images/instagram.svg") no-repeat; }
+
+/* line 292, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.github {
+  background: url("../images/github.svg") no-repeat; }
+
+/* line 295, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.linkedin {
+  background: url("../images/linkedin.svg") no-repeat; }
+
+/* line 15, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+.section--skills:after {
+  content: "";
+  display: table;
+  clear: both; }
+@media screen and (min-width: 40em) {
+  /* line 1, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_skills.scss */
+  .section--skills {
+    text-align: center; } }
+
+/* line 9, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_skills.scss */
+.skill {
+  background: #E6F3F1;
+  border-radius: 35px;
+  display: inline-block;
+  font-size: 0.95rem;
+  margin: 0.75em 0.5em 0 0;
+  padding: 0.5em 2.5em; }
+
+/* line 1, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+.section--speaking {
+  background: linear-gradient(rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.9)), url("../images/talk.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top: 15px solid #F2F1F2;
+  position: relative; }
+  /* line 9, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+  .section--speaking li {
+    padding-bottom: 0.75em; }
+
+/* line 14, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+.speaking-section {
+  margin-top: 1em; }
+  /* line 15, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+  .speaking-section:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 19, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+.section-header--speaking {
+  padding-bottom: 1em; }
+
+/* line 23, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+.speaking-event--main {
+  padding-top: 1em; }
+  @media screen and (min-width: 40em) {
+    /* line 23, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+    .speaking-event--main {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-left: 17.05961%;
+      padding-right: 2.5em;
+      text-align: left; }
+      /* line 38, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
+      .speaking-event--main:last-child {
+        margin-right: 0; } }
+
+/* line 34, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+.speaking-event--past {
+  padding-top: 2.5em; }
+  @media screen and (min-width: 40em) {
+    /* line 34, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+    .speaking-event--past {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      text-align: left; }
+      /* line 38, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
+      .speaking-event--past:last-child {
+        margin-right: 0; } }
+
+/* line 43, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+.speaking-section-header {
+  padding-bottom: 1em; }
+
+/* line 47, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+.speaking-event {
+  padding-top: 0.75em; }
+  /* line 15, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+  .speaking-event:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 52, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+.speaking-event-type {
+  color: #a6a8ab;
+  font-size: 0.95rem;
+  padding-bottom: 1em;
+  text-transform: uppercase; }
+
+/* line 59, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+.speaking-summary {
+  color: #5b6163;
+  font-size: 0.95rem;
+  padding: 0.75em 0; }
+
+/* line 65, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+.speaking-event-details {
+  display: inline-block;
+  float: left;
+  padding-left: 0.75em;
+  width: 75%; }
+
+/* line 72, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+.speaking-title--main {
+  clear: both;
+  font-weight: 400;
+  padding-top: 0.75em; }
+
+/* line 78, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+.speaking-logo {
+  display: inline-block;
+  float: left;
+  height: 40px;
+  margin: 0 auto 1em; }
+  @media screen and (min-width: 40em) {
+    /* line 78, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+    .speaking-logo {
+      margin: 0; } }
+
+/* line 89, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+.speaking-logo--droidcon {
+  width: 175px; }
+
+/* line 93, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+.speaking-logo--wwc,
+.speaking-logo--turing {
+  width: 30px; }
+
+/* line 98, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+.speaking-logo--thoughtbot {
+  width: 25px; }
+
+/* line 102, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+a.speaking-title {
+  color: #454545;
+  text-decoration: underline; }
+  /* line 106, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+  a.speaking-title:hover {
+    color: #454545; }
+
+/* line 111, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+.speaking-subtitle {
+  color: #a6a8ab;
+  font-size: 0.95rem; }
+
+/* line 1, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_testimonial.scss */
+.section--testimonial {
+  background: #E6F3F1;
+  font-size: 1rem;
+  text-align: center; }
+
+/* line 7, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_testimonial.scss */
+.testimonial-content {
+  font-weight: 200;
+  font-size: 1.125rem;
+  line-height: 1.3; }
+  @media screen and (min-width: 40em) {
+    /* line 7, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_testimonial.scss */
+    .testimonial-content {
+      font-size: 1.125rem; } }
+
+/* line 17, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_testimonial.scss */
+.testimonial-author {
+  color: #5b6163;
+  font-weight: 200;
+  padding-top: 0.75em; }
+
+/* line 23, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_testimonial.scss */
+.testimonial-position {
+  color: #5b6163;
+  font-weight: 200; }
+
+/* line 28, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_testimonial.scss */
+.testimonial-button {
+  background: #fff;
+  display: inline-block;
+  margin-bottom: 0; }
+
+@-webkit-keyframes slideRight {
+  0% {
+    -webkit-transform: translateX(-30px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0px);
+    opacity: 1; } }
+@-moz-keyframes slideRight {
+  0% {
+    -moz-transform: translateX(-30px);
+    opacity: 0; }
+  100% {
+    -moz-transform: translateX(0px);
+    opacity: 1; } }
+@keyframes slideRight {
+  0% {
+    -webkit-transform: translateX(-30px);
+    -moz-transform: translateX(-30px);
+    -ms-transform: translateX(-30px);
+    -o-transform: translateX(-30px);
+    transform: translateX(-30px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    transform: translateX(0px);
+    opacity: 1; } }
+@-webkit-keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(130px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0px);
+    opacity: 1; } }
+@-moz-keyframes slideUp {
+  0% {
+    -moz-transform: translateY(130px);
+    opacity: 0; }
+  100% {
+    -moz-transform: translateY(0px);
+    opacity: 1; } }
+@keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(130px);
+    -moz-transform: translateY(130px);
+    -ms-transform: translateY(130px);
+    -o-transform: translateY(130px);
+    transform: translateY(130px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1; } }
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-130px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0px);
+    opacity: 1; } }
+@-moz-keyframes slideDown {
+  0% {
+    -moz-transform: translateY(-130px);
+    opacity: 0; }
+  100% {
+    -moz-transform: translateY(0px);
+    opacity: 1; } }
+@keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-130px);
+    -moz-transform: translateY(-130px);
+    -ms-transform: translateY(-130px);
+    -o-transform: translateY(-130px);
+    transform: translateY(-130px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1; } }
+@-webkit-keyframes reveal {
+  0% {
+    -webkit-transform: translateY(1.875em);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    opacity: 1; } }
+@-moz-keyframes reveal {
+  0% {
+    -moz-transform: translateY(1.875em);
+    opacity: 0; }
+  100% {
+    -moz-transform: translateY(0);
+    opacity: 1; } }
+@keyframes reveal {
+  0% {
+    -webkit-transform: translateY(1.875em);
+    -moz-transform: translateY(1.875em);
+    -ms-transform: translateY(1.875em);
+    -o-transform: translateY(1.875em);
+    transform: translateY(1.875em);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+/* line 1, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_writing.scss */
+.writing {
+  background: #f2f4f7; }
+  /* line 4, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_writing.scss */
+  .writing a {
+    text-decoration: none; }
+  @media screen and (min-width: 40em) {
+    /* line 1, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_writing.scss */
+    .writing {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      /* line 38, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
+      .writing:last-child {
+        margin-right: 0; } }
+
+/* line 13, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_writing.scss */
+.writing-image {
+  background-position: center;
+  background-size: cover;
+  border: 5px solid #f2f4f7;
+  height: 200px; }
+
+/* line 20, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_writing.scss */
+.writing-image--animations {
+  background: url("../images/animations.png");
+  background-position: center;
+  background-size: cover; }
+
+/* line 26, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_writing.scss */
+.writing-image--transitions {
+  background: url("../images/transitions.png");
+  background-position: center;
+  background-size: cover; }
+
+/* line 32, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_writing.scss */
+.writing-title {
+  padding: 2.5em; }
