@@ -3,7 +3,7 @@
 source 'http://rubygems.org'
 
 gem "middleman"
-gem "middleman-livereload"
+# gem "middleman-livereload"
 gem "middleman-bourbon"
 gem "middleman-neat"
 gem "middleman-deploy"
