@@ -1,0 +1,86 @@
+.work-sample {
+  @include clearfix;
+  float: left;
+  color: $base-font-color;
+  margin-bottom: $large-spacing;
+  text-align: left;
+}
+
+.featured-work-wrapper {
+  @include clearfix;
+  color: $base-font-color;
+  text-align: left;
+
+  @include media($large-screen-up) {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+}
+
+.featured-work-description-wrapper {
+  @include clearfix;
+}
+
+.featured-work--title {
+  font-weight: 400;
+}
+
+.featured-work--copy {
+  margin-bottom: $xlarge-spacing;
+
+  @include media($large-screen-up) {
+    margin-bottom: 0;
+  }
+}
+
+.featured-work--link {
+  color: $pink;
+  text-decoration: underline;
+
+  &:hover {
+    color: $pink;
+    cursor: pointer;
+  }
+}
+
+.featured-work--subtitle {
+  color: $light-gray;
+  font-size: $font-small;
+  margin-bottom: $medium-spacing;
+
+  .btn {
+    &:first-of-type {
+      margin-right: $small-spacing;
+    }
+  }
+}
+
+.featured-work {
+  @include clearfix;
+  border: 1px solid $super-light-gray;
+  height: 500px;
+}
+
+.featured-work--1 {
+  background-image:image-url("../images/aetna-responsive.png");
+  background-size: cover;
+  background-position: top;
+}
+
+.featured-work--2 {
+  background-image: image-url("../images/medicaid-app.png");
+  background-size: cover;
+  background-position: top;
+}
+
+.featured-work--3 {
+  background-image: image-url("../images/spring-analysis.png");
+  background-size: cover;
+  background-position: top;
+}
+
+.featured-work--4 {
+  background-image: image-url("../images/pds-guide.png");
+  background-size: cover;
+  background-position: top;
+}

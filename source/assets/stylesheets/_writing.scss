@@ -1,13 +1,12 @@
 .writing {
-  background: $super-light-gray;
-
   a {
     text-decoration: none;
   }
+}
 
-  @include media($medium-screen-up) {
-    @include span-columns(6);
-  }
+.blog-post--title {
+  font-size: $font-small;
+  color: $base-font-color;
 }
 
 .writing-image {

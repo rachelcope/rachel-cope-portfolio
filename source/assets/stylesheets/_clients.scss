@@ -1,0 +1,38 @@
+//Client Block
+
+.client-block {
+  padding: ($xlarge-spacing*4) 0;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  margin: $large-spacing 0;
+}
+
+.logo {
+  display: inline-block;
+  margin-right: em(50);
+}
+
+.aetna {
+  background: image-url('aetna.svg') no-repeat;
+}
+
+.cfa {
+  background: image-url('cfa.svg') no-repeat;
+}
+
+.citi {
+  background: image-url('citi.svg') no-repeat;
+}
+
+.thoughtbot {
+  background: image-url('') no-repeat;
+  background-image: image-url("../images/thoughtbot.svg");
+  background-size: cover;
+}
+
+.mit {
+  background: image-url('mit.svg') no-repeat;
+}

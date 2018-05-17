@@ -1,0 +1,37 @@
+.btn {
+  // @include animation(slideUp 0.75s);
+  // @include animation-delay(.85s);
+  // @include transition (all, linear, 0.3s);
+  background: $yellow;
+  border: 1px solid $black;
+  border-radius: em(5);
+  color: $black;
+  display: inline-block;
+  font-size: $font-small;
+  letter-spacing: 1px;
+  margin: $large-spacing auto;
+  padding: $base-spacing ($large-spacing * 1.5);
+
+  &:hover {
+    background: darken($yellow, 10);
+    color: $base-font-color;
+    cursor: pointer;
+  }
+}
+
+.btn--dribbble {
+  margin-right: $small-spacing;
+}
+
+.buttons--center {
+  text-align: center;
+  margin-bottom: $medium-spacing;
+
+  .btn {
+    display: block;
+
+    @include media($medium-screen-up) {
+      display: inline-block;
+    }
+  }
+}

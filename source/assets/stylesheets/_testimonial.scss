@@ -14,19 +14,108 @@
   }
 }
 
-.testimonial-author {
+.testimonial--header-author {
   color: $medium-gray;
   font-weight: $regular-font-weight;
   padding-top: $small-spacing;
-}
-
-.testimonial-position {
-  color: $medium-gray;
-  font-weight: $regular-font-weight;
 }
 
 .testimonial-button {
   background: $white;
   display: inline-block;
   margin-bottom: 0;
+}
+
+.testimonial--header {
+  // margin-left: $small-spacing;
+  position: relative;
+  text-align: center;
+
+  .section-title {
+    display: inline-block;
+    position: relative;
+
+    &::before {
+      @include media($medium-screen-up) {
+        content: '';
+        background: image-url('leaves-right.svg') no-repeat;
+        height: 90px;
+        width: 40px;
+        position: absolute;
+        left: 0px;
+        top: -10px;
+      }
+    }
+
+    &::after {
+      @include media($medium-screen-up) {
+        content: '';
+        background: image-url('leaves.svg') no-repeat;
+        height: 90px;
+        width: 40px;
+        position: absolute;
+        right: 0px;
+        top: -10px;
+      }
+    }
+  }
+}
+
+.testimonial--header-author {
+  padding-bottom: $xsmall-spacing;
+
+  @include media($large-screen-up) {
+    text-align: center;
+  }
+}
+
+.testimonial--block {
+  clear: both;
+  margin-bottom: $large-spacing;
+
+  @include media($large-screen-up) {
+    @include span-columns(6);
+    clear: none;
+  }
+}
+
+.testimonial--content {
+  border: 1px solid $dark-gray;
+  border-radius: $base-border-radius;
+  margin-bottom: $medium-spacing;
+  padding: $medium-spacing;
+}
+
+.testimonial--author-photo {
+  border-radius: 50%;
+  display: inline-block;
+  float: left;
+  height: 3em;
+  margin: 0 $small-spacing;
+  width: 3em;
+
+  &.author-photo--1 {
+    background: image-url('andrew.png') no-repeat;
+    background-size: cover;
+  }
+
+  &.author-photo--2 {
+    background: image-url('alan.png') no-repeat;
+    background-size: cover;
+  }
+
+  &.author-photo--3 {
+    background: image-url('dan.png') no-repeat;
+    background-size: cover;
+  }
+
+  &.author-photo--4 {
+    background: image-url('kyle.png') no-repeat;
+    background-size: cover;
+  }
+}
+
+.testimonial--author-name {
+  font-weight: bolder;
+  padding-top: $small-spacing;
 }

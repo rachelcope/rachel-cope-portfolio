@@ -6,8 +6,8 @@ $header-font-family: $base-font-family;
 
 // Sizes
 $base-font-size: 1rem;
-$font-large: 2.5rem;
-$font-xlarge: 3.5rem;
+$font-large: 3.5rem;
+$font-xlarge: 4.5rem;
 $font-medium: 2rem;
 $font-small: 0.95rem;
 $font-size-18: 1.125rem;
@@ -18,16 +18,17 @@ $header-line-height: $base-font-size * 1.25;
 $base-border-radius: em(3);
 
 // Colors
+$black: #000;
 $blue: #477dca;
 $dark-gray: #454545;
 $medium-gray: #5b6163;
-$super-light-gray: #f2f4f7;
+$super-light-gray: #e3e3e3;
 $light-gray: #a6a8ab;
 $light-pink: #ffefef;
-$pink: #ffa4a4;
-$very-light-pink: #fff8f8;
+$pink: #fc476d;
 $light-red: #fbe3e4;
 $light-yellow: yellow;
+$yellow: #f9f738;
 $very-light-green: #E6F3F1;
 $light-green: #F2F1F2;
 $bright-green: #00f7b1;

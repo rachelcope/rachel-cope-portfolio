@@ -7,10 +7,9 @@
 }
 
 .skill {
-  background: $very-light-green;
-  border-radius: 35px;
+  border-bottom: 1px dashed $light-gray;
   display: inline-block;
   font-size: $font-small;
-  margin: $small-spacing $xsmall-spacing 0 0;
-  padding: $xsmall-spacing $large-spacing;
+  margin: $small-spacing $medium-spacing 0 0;
+  padding: $xsmall-spacing;
 }

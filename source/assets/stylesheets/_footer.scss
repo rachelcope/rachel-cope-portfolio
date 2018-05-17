@@ -1,0 +1,48 @@
+.footer {
+  clear: both;
+  padding-bottom: $base-spacing;
+  text-align: center;
+}
+
+.bio-photo {
+  border-radius: 50%;
+  display: inline-block;
+  height: 15em;
+  margin: 0 $small-spacing;
+  width: 15em;
+  background: image-url('rc-headshot.jpg') no-repeat;
+  background-size: cover;
+}
+
+.social-icons {
+  margin-top: $medium-spacing;
+}
+
+.social-icon {
+  @include size(em(50));
+  display: inline-block;
+  margin: em(10) em(10) em(50);
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.mail {
+  background: image-url('mail.svg') no-repeat;
+}
+.twitter {
+  background: image-url('twitter.svg') no-repeat;
+}
+.dribbble {
+  background: image-url('dribbble.svg') no-repeat;
+}
+.instagram {
+  background: image-url('instagram.svg') no-repeat;
+}
+.github {
+  background: image-url('github.svg') no-repeat;
+}
+.linkedin {
+  background: image-url('linkedin.svg') no-repeat;
+}

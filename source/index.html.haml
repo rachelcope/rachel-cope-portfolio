@@ -4,64 +4,162 @@ title: Portfolio of Rachel Cope
 
 %section.hero
   .nav
-    .r-icon
+    -# .r-icon
     -# %a.about-link About Me
   %header.grid-wrapper.grid-small.hero-content
-    .hero-headers
-      %h1.hero-header Hi, I’m Rachel.
-      %h3.hero-subheader UX, product, and front-end designer with a knack for solving problems and delighting users. Let's make something great together.
-    %a.btn(href="mailto:rachelcope@gmail.com") Contact me
+    .hero--header
+      %h1.hero--title Hi, I’m Rachel.
+      %h3.hero--subtitle.font-medium A freelance UX, product, and front-end designer.
+    .buttons--center
+      %a.btn(href="mailto:rachelcope@gmail.com") Say hello
     %a.arrow(href='#my-work')
+.line
 
-%section.section.section--testimonial
+%section#my-work.section.section--work
   .grid-wrapper
-    %h5.testimonial-content “Rachel brings amazing energy, personality, and skill to design that is incredibly difficult to find. She has the rare ability to execute a well crafted user experience from concept to implementation. Our clients always rave about her final products and enjoy working with her immensely - she is a true asset.”
-    .testimonial-author Kyle Fiedler
-    .testimonial-position Chief Design Officer, thoughtbot
-  %a.btn.testimonial-button(href="https://www.linkedin.com/in/rachel-cope-8aab126") View More References on LinkedIn
+    .client-block
+      %h3.bio.font-medium
+        For 8+ years, I’ve helped companies from small startups to Fortune 50 companies build products that are simple, beautiful, and easy to use. Recent projects include:
+
+      .logos
+        .logo.aetna
+          %img(src="assets/images/aetna-logo.svg")
+        .logo.cfa
+          %img(src="assets/images/citi-logo.svg")
+        .logo.citi
+          %img(src="assets/images/cfa-logo.svg")
+        .logo.thoughtbot
+          %img(src="assets/images/thoughtbot-logo.svg")
+        .logo.mit
+          %img(src="assets/images/mit-logo.svg")
 
 %section.section#my-work.section--work
   .grid-wrapper
-    .section-header Featured Work
+    .section-header
+      .section-title Featured Work
+      .section-subtitle.font-medium Product Strategy / UI & UX Design / Prototyping / User Testing
     .animate
     .grid-row
-      %a.featured-work-wrapper(href="https://dribbble.com/shots/3291855-Mortgage-Application-Prototype" target="_blank")
+      .featured-work-wrapper
         .featured-work.featured-work--1
         .featured-work-description-wrapper
         .featured-work-description
-          .featured-work--title Mortgage Application Prototype
-          .featured-work--subtitle UX| Prototyping | Visual Design | Mobile Design
-
-      %a.featured-work-wrapper(href="https://thoughtbot.com/product-design-sprint/guide" target="_blank")
+          %h3.featured-work--title.font-medium
+            Expand the Design Language System for Aetna's Responsive Web App
+          .featured-work--subtitle
+            UX| Prototyping | Visual Design | Mobile Design
+          -# .featured-work--copy
+          -#   Collaborated with the Aetna design team to implement the new Aetna design
+          -#   system and library across the responsive web app.
+        %p (Case Study Coming Soon)
+      .featured-work-wrapper(href="https://medium.com/@rachelcope/case-study-michigan-multibenefits-project-e8502376df1f" target="_blank")
         .featured-work.featured-work--2
         .featured-work-description-wrapper
         .featured-work-description
-          .featured-work--title Design Sprint Guide
-          .featured-work--subtitle UX | Visual Design | Illustrations | Front-end Development
+          %h3.featured-work--title.font-medium
+            Redesign the Medicaid Benefits Application for the State of Michigan
+          .featured-work--subtitle
+            Product Design | UX | Protyping | Front-end Development
+          -# .featured-work--copy
+          -#   Partnered with Code for America to design a human-centered digital experience to help the government better serve the most vulnerable Americans.
+        = link_to "View Case Study", "href=https://medium.com/@rachelcope/case-study-michigan-multibenefits-project-e8502376df1f", class: "featured-work--link"
 
     .grid-row
-      %a.featured-work-wrapper(href="https://dribbble.com/shots/2437377-Accounting-Dashboard" target="_blank")
-        .featured-work--3.featured-work
+      .featured-work-wrapper(href="https://medium.com/@rachelcope/spring-analysis-case-study-3dc494077114" target="_blank")
+        .featured-work.featured-work--3
         .featured-work-description-wrapper
           .featured-work-description
-            .featured-work--title Accounting Software Redesign
-            .featured-work--subtitle User Research | Product Design Sprint | Protoyping | Front-end Development
+            %h3.featured-work--title.font-medium
+              Custom-built software platform to study Autism in children
+            .featured-work--subtitle
+              Product Design Sprint | Protoyping | Front-end Development
+            = link_to "View Case Study", "https://medium.com/@rachelcope/spring-analysis-case-study-3dc494077114", class: "featured-work--link"
 
-      %a.featured-work-wrapper(href="https://dribbble.com/shots/2851503-Android-Material-Design" target="_blank")
-        .featured-work.featured-work--4
+
+      .featured-work-wrapper(href="https://thoughtbot.com/product-design-sprint/guide" target="_blank")
+        %h3.featured-work.featured-work--4
         .featured-work-description-wrapper
         .featured-work-description
-          .featured-work--title Android Material Design
-          .featured-work--subtitle Product Design Sprint | Prototyping | User Testing | Material Design
+          %h3.featured-work--title.font-medium
+            Design Sprint Guide
+          .featured-work--subtitle
+            UX | Visual Design | Illustrations | Front-end Development
+          = link_to "View Website", "https://thoughtbot.com/product-design-sprint/guide", class: "featured-work--link"
 
-    %section.grid-wrapper.featured-work--buttons
-      %a.btn.btn--dribbble(href="https://dribbble.com/rachelcope") More on Dribbble
-      %a.btn(href="https://www.behance.net/rachelcope") More on Behance
+
+    %section.buttons--center
+      %a.btn(href="https://dribbble.com/rachelcope") More on Dribbble
+
+.line
+%section.section.testimonial
+  .grid-wrapper
+    .testimonial--header
+      .section-header
+        %h2.section-title
+          fearless, fast and thorough design work
+        .testimonial--header-author Alan Joseph Williams, Product Lead @ Code for America
+  .grid-wrapper.testimonial--container
+    .grid-row
+      .testimonial--block
+        .testimonial--content
+          Rachel is one of the most empathetic designers I know. She truly wants
+          to make sure her client, project, and team succeed on every level.
+          Over the last few years I've seen her grow as a designer, front-end
+          developer, and a consultant. Numerous projects were successful from
+          her single-handedly making sure the client was satisfied with all
+          aspects of the project. Her passion for making sure the product is
+          designed with the users needs put first is refreshing and a true asset to any team.
+        .testimonial--author
+          .testimonial--author-photo.author-photo--1
+          .testimonial--author-name
+            Andrew Cohen, Product Design Lead @ ConsenSys
+      .testimonial--block
+        .testimonial--content
+          My experience working with Rachel was the same as others — it was an
+          ideal consultant relationship. Rachel not only brought expertise and
+          skill to the design of a complex product experience, but she brought
+          a level of insight and professionalism that made the entire product
+          development process more effective. Rachel was a crisp, clear and
+          frequent communicator and stellar 1:1 collaborator. I can't recommend
+          her highly enough for fearless, fast and thorough design work.
+        .testimonial--author
+          .testimonial--author-photo.author-photo--2
+          .testimonial--author-name
+            Alan Joseph Williams, Product Lead @ Code for America
+    .grid-row
+      .testimonial--block
+        .testimonial--content
+          Every time I've worked with Rachel, I've been confident from start to
+          finish that the resulting design and implementation will be a great
+          fit for the design problem we're solving together. She is a great
+          communicator, self-manages time and budget on projects, is fun to
+          work with, and is willing and able to do the front-end development of
+          her designs or those of teammates. Clients and teammates at thoughtbot
+          know to expect above and beyond effort and enthusiasm from Rachel.
+          She's a pleasure to work with, and reliably delivers excellent results.
+        .testimonial--author
+          .testimonial--author-photo.author-photo--3
+          .testimonial--author-name
+            Dan Croak, Lead Developer @ Chain
+      .testimonial--block
+        .testimonial--content
+          Rachel brings amazing energy, personality, and skill to design that is
+          incredibly difficult to find. She has the rare ability to execute a well
+          crafted user experience from concept to implementation. Our clients always
+          rave about her final products and enjoy working with her immensely - she
+          is a true asset.
+        .testimonial--author
+          .testimonial--author-photo.author-photo--4
+          .testimonial--author-name
+            Kyle Fielder, Chief Design Officer @ thoughtbot
+
+  %section.grid-wrapper.buttons--center
+    %a.btn(href="https://www.linkedin.com/in/rachel-cope-smith-8aab126") More on LinkedIn
 
 %section.section.section--speaking
   .grid-wrapper
-    .section-header.section-header--speaking Speaking
-
+    .section-header
+      %h2.section-title Words
     .speaking-event--main
       .speaking-logo.speaking-logo--droidcon
         %img(src="assets/images/droidcon.png")
@@ -73,7 +171,7 @@ title: Portfolio of Rachel Cope
         with design thinking and ending with a user-tested prototype, a Product
         Design Sprint orients the team and effort toward a mutual goal and
         improves the changes of making something people want.
-      .speaking-subtitle droidconf London | London, October 2016
+      .speaking-subtitle droidconf London | London
 
     %ul.speaking-event--past
       %li.speaking-event
@@ -81,63 +179,71 @@ title: Portfolio of Rachel Cope
           %img(src="assets/images/women-who-code.png")
         .speaking-event-details
           .speaking-title The Product Design Sprint
-          .speaking-subtitle Women Who Code | Denver, 2016
+          .speaking-subtitle Women Who Code | Denver
       %li.speaking-event
         .speaking-logo.speaking-logo--turing
           %img(src="assets/images/turing.png")
         .speaking-event-details
           .speaking-title Introduction to Design Thinking
-          .speaking-subtitle Turing School of Software and Design | Denver, 2015
+          .speaking-subtitle Turing School of Software and Design | Denver
       %li.speaking-event
         .speaking-logo.speaking-logo--thoughtbot
           %img(src="assets/images/thoughtbot.png")
         .speaking-event-details
           .speaking-title What Makes You Tick? Lessons from the Enneagram.
-          .speaking-subtitle thoughtbot | Denver, 2016
-
-%section.section.section--writing
+          .speaking-subtitle thoughtbot | Denver
   .grid-wrapper
-    .section-header Writing
-    .writing
-      .writing-image.writing-image--animations
-      .writing-title
-        = link_to "CSS Animation for Beginners", "https://robots.thoughtbot.com/css-animation-for-beginners", class: "speaking-title"
-        .speaking-subtitle Giant Robots
-    .writing
-      .writing-image.writing-image--transitions
-      .writing-title
-        = link_to "CSS Transitions and Transforms for Beginners", "https://robots.thoughtbot.com/transitions-and-transforms", class: "speaking-title"
-        .speaking-subtitle Giant Robots
-
-  %section.grid-wrapper.featured-work--buttons
-    %a.btn(href="https://medium.com/@rachelcope") Read more on Medium
+    %ul.blog
+      %li.blog--row
+        = link_to "Case Study: Michigan Multibenefits Project", "https://medium.com/@rachelcope/case-study-michigan-multibenefits-project-e8502376df1f", class: "blog--title font-medium"
+        .blog--date 24 April, 2018
+      %li.blog--row
+        = link_to "4 Ways to Activate your Empathy", "https://medium.com/@rachelcope/4-ways-to-activate-your-empathy-ec8a5360e46c", class: "blog--title font-medium"
+        .blog--date 13 March, 2017
+      %li.blog--row
+        = link_to "CSS Animation for Beginners", "https://robots.thoughtbot.com/css-animation-for-beginners", class: "blog--title font-medium"
+        .blog--date 3 Aug, 2016
+      %li.blog--row
+        = link_to "CSS Transitions and Transforms for Beginners", "https://robots.thoughtbot.com/transitions-and-transforms", class: "blog--title font-medium"
+        .blog--date Aug 24, 2015
+      %section.grid-wrapper.buttons--center
+        %a.btn(href="https://medium.com/@rachelcope") Read more on Medium
 
 %section.section.section--skills
   .grid-wrapper.grid-small
-    .section-header Skills
+    .section-header
+      .section-title Services
+    -# .section-subtitle.font-medium I am a product, UX, and front-end designer focused on web and mobile app design. I have 8+ years experience designing and building ideas using human-centered, user-driven, and agile methodologies. My skills and services include:
     .skills
-      .skill HTML/HAML/SLIM
-      .skill CSS/SCSS
-      .skill Bourbon/Neat
-      .skill Github
-      .skill Speaking
-      .skill Espanol
-      .skill Product Design Sprints
+      .skill Design Sprint facilitation
+      .skill Product design
+      .skill Product strategy
+      .skill User experience design
       .skill Sketching
       .skill Prototyping
-      .skill User Research
-      .skill Writing
-      .skill Illustrator/Sketch
-      .skill Usability Testing
-      .skill Visual Design
-      .skill Information Architecture
+      .skill User research
+      .skill Usability testing
+      .skill Information architecture
       .skill User flows
+      .skill Visual design
+      .skill UI design
+      .skill HTML/CSS
+      .skill Github
+      .skill Speaking
 
-%footer.find-me-online
+%footer.section.footer
   .grid-wrapper
-    %a.mail(href="mailto:rachelcope@gmail.com")
-    %a.twitter(href="https://twitter.com/rachelcope")
-    %a.dribbble(href="https://dribbble.com/rachelcope")
-    %a.instagram(href="https://instagram.com/rachelcope")
-    %a.github(href="https://github.com/rachelcope")
-    %a.linkedin(href="https://www.linkedin.com/in/rachel-cope-8aab126")
+    -# .bio-photo
+    .section-header
+      .section-title Let's work together
+      .section-subtitle.font-medium Say hello! Whether you need to create a new product from scratch or improve an existing product, let's bring your ideas to life.
+    .buttons--center
+      %a.btn(href="mailto:rachelcope@gmail.com") Say hello
+
+  .grid-wrapper.social-icons
+    %a.social-icon.mail(href="mailto:rachelcope@gmail.com")
+    %a.social-icon.twitter(href="https://twitter.com/rachelcope")
+    %a.social-icon.dribbble(href="https://dribbble.com/rachelcope")
+    %a.social-icon.instagram(href="https://instagram.com/rachelcope")
+    %a.social-icon.github(href="https://github.com/rachelcope")
+    %a.social-icon.linkedin(href="https://www.linkedin.com/in/rachel-cope-8aab126")

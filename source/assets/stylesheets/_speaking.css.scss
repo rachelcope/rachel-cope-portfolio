@@ -1,14 +1,5 @@
 .section--speaking {
-  background: linear-gradient(rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.90)), image-url("talk.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-top:  15px solid $light-green;
   position: relative;
-
-  li {
-    padding-bottom: $small-spacing;
-  }
 }
 
 .speaking-section {
@@ -16,16 +7,10 @@
   margin-top: $base-spacing;
 }
 
-.section-header--speaking {
-  padding-bottom: $base-spacing;
-}
-
 .speaking-event--main {
-  padding-top: $base-spacing;
 
   @include media($medium-screen-up) {
-    @include span-columns(6);
-    @include shift(2);
+    @include span-columns(8);
     padding-right: $large-spacing;
     text-align: left;
   }
@@ -111,4 +96,30 @@ a.speaking-title {
 .speaking-subtitle {
   color: $light-gray;
   font-size: $font-small;
+}
+
+.blog {
+  margin-top: $large-spacing;
+}
+
+a.blog--title{
+  &:hover {
+    color: $pink;
+  }
+}
+
+.blog--date {
+  @include media($medium-screen-up) {
+    float: right;
+  }
+}
+
+.blog--row {
+  border-top: 1px dashed $light-gray;
+  clear: both;
+  padding: $medium-spacing 0;
+
+  &:last-of-type {
+    border-bottom: 1px dashed $light-gray;
+  }
 }
