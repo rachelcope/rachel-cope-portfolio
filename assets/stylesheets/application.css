@@ -1187,18 +1187,14 @@ a.blog--title:hover {
     cursor: pointer; }
 
 /* line 22, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_buttons.scss */
-.btn--dribbble {
-  margin-right: 0.75em; }
-
-/* line 26, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_buttons.scss */
 .buttons--center {
   text-align: center;
   margin-bottom: 1.75em; }
-  /* line 30, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_buttons.scss */
+  /* line 26, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_buttons.scss */
   .buttons--center .btn {
     display: block; }
     @media screen and (min-width: 40em) {
-      /* line 30, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_buttons.scss */
+      /* line 26, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_buttons.scss */
       .buttons--center .btn {
         display: inline-block; } }
 
@@ -1369,34 +1365,38 @@ a.blog--title:hover {
   padding: 20em 0; }
 
 /* line 7, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_clients.scss */
+.bio {
+  text-align: center; }
+
+/* line 11, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_clients.scss */
 .logos {
   display: flex;
   justify-content: center;
   margin: 2.5em 0; }
 
-/* line 13, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_clients.scss */
+/* line 17, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_clients.scss */
 .logo {
   display: inline-block;
   margin-right: 3.125em; }
 
-/* line 18, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_clients.scss */
+/* line 22, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_clients.scss */
 .aetna {
   background: url("../images/aetna.svg") no-repeat; }
 
-/* line 22, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_clients.scss */
+/* line 26, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_clients.scss */
 .cfa {
   background: url("../images/cfa.svg") no-repeat; }
 
-/* line 26, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_clients.scss */
+/* line 30, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_clients.scss */
 .citi {
   background: url("../images/citi.svg") no-repeat; }
 
-/* line 30, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_clients.scss */
+/* line 34, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_clients.scss */
 .thoughtbot {
   background: url("../images") no-repeat;
   background-image: url("../images/thoughtbot.svg");
   background-size: cover; }
 
-/* line 36, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_clients.scss */
+/* line 40, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_clients.scss */
 .mit {
   background: url("../images/mit.svg") no-repeat; }
