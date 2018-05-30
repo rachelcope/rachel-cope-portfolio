@@ -605,17 +605,41 @@ input[type="submit"] {
   white-space: nowrap; }
 
 /* line 1, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-body {
-  border-top: 15px solid #F2F1F2; }
-
-/* line 6, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
 html,
 body,
 .hero {
   width: 100%;
   height: 100%; }
 
-/* line 13, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+/* line 10, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.hero-content {
+  -webkit-animation-delay: 0.55s;
+  -moz-animation-delay: 0.55s;
+  animation-delay: 0.55s;
+  background: #fff;
+  background-size: cover;
+  text-align: center; }
+
+/* line 19, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.hero--header {
+  -webkit-animation: slideUp 0.8s 0.85s 1 backwards;
+  -moz-animation: slideUp 0.8s 0.85s 1 backwards;
+  animation: slideUp 0.8s 0.85s 1 backwards; }
+
+/* line 23, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.hero--title {
+  color: #404041;
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 0.75em; }
+  @media screen and (min-width: 40em) {
+    /* line 23, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+    .hero--title {
+      font-size: 4.5rem;
+      line-height: 0; } }
+
+/* line 36, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
 .grid-wrapper {
   max-width: 68em;
   margin-left: auto;
@@ -627,12 +651,12 @@ body,
     display: table;
     clear: both; }
   @media screen and (min-width: 53.75em) {
-    /* line 13, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+    /* line 36, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
     .grid-wrapper {
       margin: 0 auto; } }
 
 @media screen and (min-width: 53.75em) {
-  /* line 22, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+  /* line 45, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
   .grid-small {
     padding: 0 10em; } }
 
@@ -641,34 +665,42 @@ body,
   content: "";
   display: table;
   clear: both; }
-/* line 31, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-.grid-row:first-of-type {
-  margin-bottom: 5em; }
+@media screen and (min-width: 53.75em) {
+  /* line 54, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+  .grid-row:last-of-type {
+    margin-top: 5em; } }
 
-/* line 36, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+/* line 61, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
 .section {
-  padding: 5em 0; }
-  /* line 39, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+  padding: 15em 0; }
+  /* line 64, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
   .section--work {
-    padding-bottom: 0; }
+    padding-top: 0; }
 
-/* line 44, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+/* line 69, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
 .section-header {
-  font-size: 2rem;
-  font-weight: 500;
-  padding-bottom: 2.5em;
-  text-align: left;
-  text-transform: uppercase; }
+  padding-bottom: 5em;
+  text-align: left; }
   @media screen and (min-width: 40em) {
-    /* line 44, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+    /* line 69, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
     .section-header {
       text-align: center; } }
 
-/* line 56, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+/* line 78, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.section-title {
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 1; }
+  @media screen and (min-width: 53.75em) {
+    /* line 78, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+    .section-title {
+      line-height: normal; } }
+
+/* line 88, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
 .nav {
   padding: 1.75em 2.5em 0; }
 
-/* line 61, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+/* line 93, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
 .r-icon {
   height: 2em;
   width: 3em;
@@ -676,88 +708,31 @@ body,
   background-repeat: no-repeat;
   float: left; }
 
-/* line 68, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+/* line 100, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
 .about-link {
   color: #454545;
   font-size: 0.95rem;
   float: right;
   letter-spacing: 1px; }
-  /* line 74, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+  /* line 106, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
   .about-link:hover {
     color: #454545; }
 
-/* line 79, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-.hero {
-  -webkit-animation-delay: 0.55s;
-  -moz-animation-delay: 0.55s;
-  animation-delay: 0.55s;
-  background: #fff;
-  background-size: cover;
-  border-bottom: 1px solid #f2f4f7;
-  text-align: center;
-  width: auto; }
-
-/* line 90, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-.hero-headers {
-  -webkit-animation: slideUp 0.8s 0.85s 1 backwards;
-  -moz-animation: slideUp 0.8s 0.85s 1 backwards;
-  animation: slideUp 0.8s 0.85s 1 backwards; }
-
-/* line 94, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-.hero-header {
-  color: #404041;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.4; }
-  @media screen and (min-width: 53.75em) {
-    /* line 94, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-    .hero-header {
-      font-size: 3.5rem; } }
-
-/* line 105, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-.hero-subheader {
-  color: #a6a8ab;
+/* line 111, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+.font-medium {
+  color: #454545;
   font-size: 1.5rem;
   font-weight: 200;
   line-height: 1.4;
-  margin-bottom: 2.5em;
-  margin-top: 0.75em; }
+  margin-top: 0.5em; }
 
-/* line 115, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+/* line 119, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
 .hero-content {
   position: relative;
   top: 50%;
   transform: translateY(-50%); }
 
-/* line 121, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-.btn, .green-btn {
-  -webkit-animation: slideUp 0.75s;
-  -moz-animation: slideUp 0.75s;
-  animation: slideUp 0.75s;
-  -webkit-animation-delay: 0.85s;
-  -moz-animation-delay: 0.85s;
-  animation-delay: 0.85s;
-  -webkit-transition: all, linear, 0.3s;
-  -moz-transition: all, linear, 0.3s;
-  transition: all, linear, 0.3s;
-  background: #F2F1F2;
-  border-radius: 1.5625em;
-  color: #454545;
-  font-size: 0.95rem;
-  letter-spacing: 1px;
-  margin: 2.5em auto;
-  padding: 1em 3.75em; }
-  /* line 134, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-  .btn:hover, .green-btn:hover {
-    background: #F2F1F2;
-    color: #454545;
-    cursor: pointer; }
-
-/* line 141, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-.btn--dribbble {
-  margin-right: 0.75em; }
-
-/* line 145, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+/* line 125, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
 .arrow {
   height: 3.125em;
   width: 3.125em;
@@ -765,171 +740,11 @@ body,
   display: block;
   margin: 5em auto 1em; }
 
-/* line 152, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-.featured-work-wrapper {
-  float: left;
-  color: #454545;
-  margin-bottom: 2.5em;
-  text-align: left; }
-  /* line 15, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
-  .featured-work-wrapper:after {
-    content: "";
-    display: table;
-    clear: both; }
-  @media screen and (min-width: 53.75em) {
-    /* line 152, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-    .featured-work-wrapper {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 48.82117%;
-      margin-bottom: 5em; }
-      /* line 38, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
-      .featured-work-wrapper:last-child {
-        margin-right: 0; }
-      /* line 52, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/neat-1.6.0/app/assets/stylesheets/grid/_omega.scss */
-      .featured-work-wrapper:nth-child(2n) {
-        margin-right: 0; }
-      /* line 57, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/neat-1.6.0/app/assets/stylesheets/grid/_omega.scss */
-      .featured-work-wrapper:nth-child(2n+1) {
-        clear: left; } }
-  /* line 165, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-  .featured-work-wrapper:hover {
-    color: #454545;
-    cursor: pointer; }
-
-/* line 171, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-.featured-work {
-  border: 1px solid #f2f4f7;
-  height: 500px;
-  margin-bottom: 1em; }
-  /* line 15, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
-  .featured-work:after {
-    content: "";
-    display: table;
-    clear: both; }
-
-/* line 178, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-.featured-work--1 {
-  background-image: url("../images/loanapplication.png");
-  background-size: cover;
-  background-position: top; }
-
-/* line 184, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-.featured-work--2 {
-  background-image: url("../images/pds-guide.png");
-  background-size: cover;
-  background-position: top; }
-
-/* line 190, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-.featured-work--3 {
-  background-image: url("../images/accounting.png");
-  background-size: cover;
-  background-position: top; }
-
-/* line 196, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-.featured-work--4 {
-  background-image: url("../images/android.png");
-  background-size: cover;
-  background-position: top; }
-
-/* line 15, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
-.featured-work-description-wrapper:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-/* line 206, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-.featured-work--title {
-  font-size: 2rem;
-  font-weight: 400; }
-
-/* line 211, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-.featured-work--subtitle {
-  color: #a6a8ab;
-  font-size: 0.95rem; }
-  /* line 216, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-  .featured-work--subtitle .btn:first-of-type, .featured-work--subtitle .green-btn:first-of-type {
-    margin-right: 0.75em; }
-
-/* line 222, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-.featured-work--buttons {
-  text-align: center;
-  margin-bottom: 1.75em; }
-  /* line 226, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-  .featured-work--buttons .btn, .featured-work--buttons .green-btn {
-    display: block; }
-    @media screen and (min-width: 40em) {
-      /* line 226, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-      .featured-work--buttons .btn, .featured-work--buttons .green-btn {
-        display: inline-block; } }
-
-/* line 235, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
+/* line 132, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
 .animated {
   -webkit-animation: slideUp 0.75s;
   -moz-animation: slideUp 0.75s;
   animation: slideUp 0.75s; }
-
-/* line 239, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-.line {
-  border-bottom: 2px solid #F2F1F2;
-  margin: 0 auto 4.375em;
-  width: 15.625em; }
-
-/* line 245, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-.green-btn {
-  border: 2px solid #F2F1F2;
-  color: #F2F1F2;
-  display: inline-block; }
-  /* line 251, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-  .green-btn:hover {
-    color: white;
-    background: #F2F1F2;
-    border: 1px solid #F2F1F2;
-    cursor: pointer; }
-
-/* line 259, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-.find-me-online {
-  clear: both;
-  text-align: center;
-  padding: 5em 0 1em; }
-  /* line 264, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-  .find-me-online h2 {
-    color: #a6a8ab; }
-  /* line 268, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-  .find-me-online a {
-    height: 3.125em;
-    width: 3.125em;
-    display: inline-block;
-    margin: 0.625em 0.625em 3.125em;
-    fill-color: red; }
-    /* line 274, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-    .find-me-online a:hover {
-      cursor: pointer; }
-
-/* line 280, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-.mail {
-  background: url("../images/mail.svg") no-repeat; }
-
-/* line 283, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-.twitter {
-  background: url("../images/twitter.svg") no-repeat; }
-
-/* line 286, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-.dribbble {
-  background: url("../images/dribbble.svg") no-repeat; }
-
-/* line 289, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-.instagram {
-  background: url("../images/instagram.svg") no-repeat; }
-
-/* line 292, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-.github {
-  background: url("../images/github.svg") no-repeat; }
-
-/* line 295, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_global.css.scss */
-.linkedin {
-  background: url("../images/linkedin.svg") no-repeat; }
 
 /* line 15, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
 .section--skills:after {
@@ -943,26 +758,17 @@ body,
 
 /* line 9, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_skills.scss */
 .skill {
-  background: #E6F3F1;
-  border-radius: 35px;
+  border-bottom: 1px dashed #a6a8ab;
   display: inline-block;
   font-size: 0.95rem;
-  margin: 0.75em 0.5em 0 0;
-  padding: 0.5em 2.5em; }
+  margin: 0.75em 1.75em 0 0;
+  padding: 0.5em; }
 
 /* line 1, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
 .section--speaking {
-  background: linear-gradient(rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.9)), url("../images/talk.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-top: 15px solid #F2F1F2;
   position: relative; }
-  /* line 9, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
-  .section--speaking li {
-    padding-bottom: 0.75em; }
 
-/* line 14, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+/* line 5, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
 .speaking-section {
   margin-top: 1em; }
   /* line 15, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
@@ -971,32 +777,24 @@ body,
     display: table;
     clear: both; }
 
+@media screen and (min-width: 40em) {
+  /* line 10, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+  .speaking-event--main {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    padding-right: 2.5em;
+    text-align: left; }
+    /* line 38, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
+    .speaking-event--main:last-child {
+      margin-right: 0; } }
+
 /* line 19, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
-.section-header--speaking {
-  padding-bottom: 1em; }
-
-/* line 23, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
-.speaking-event--main {
-  padding-top: 1em; }
-  @media screen and (min-width: 40em) {
-    /* line 23, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
-    .speaking-event--main {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 48.82117%;
-      margin-left: 17.05961%;
-      padding-right: 2.5em;
-      text-align: left; }
-      /* line 38, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
-      .speaking-event--main:last-child {
-        margin-right: 0; } }
-
-/* line 34, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
 .speaking-event--past {
   padding-top: 2.5em; }
   @media screen and (min-width: 40em) {
-    /* line 34, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+    /* line 19, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
     .speaking-event--past {
       float: left;
       display: block;
@@ -1007,11 +805,11 @@ body,
       .speaking-event--past:last-child {
         margin-right: 0; } }
 
-/* line 43, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+/* line 28, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
 .speaking-section-header {
   padding-bottom: 1em; }
 
-/* line 47, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+/* line 32, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
 .speaking-event {
   padding-top: 0.75em; }
   /* line 15, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
@@ -1020,68 +818,90 @@ body,
     display: table;
     clear: both; }
 
-/* line 52, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+/* line 37, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
 .speaking-event-type {
   color: #a6a8ab;
   font-size: 0.95rem;
   padding-bottom: 1em;
   text-transform: uppercase; }
 
-/* line 59, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+/* line 44, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
 .speaking-summary {
   color: #5b6163;
   font-size: 0.95rem;
   padding: 0.75em 0; }
 
-/* line 65, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+/* line 50, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
 .speaking-event-details {
   display: inline-block;
   float: left;
   padding-left: 0.75em;
   width: 75%; }
 
-/* line 72, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+/* line 57, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
 .speaking-title--main {
   clear: both;
   font-weight: 400;
   padding-top: 0.75em; }
 
-/* line 78, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+/* line 63, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
 .speaking-logo {
   display: inline-block;
   float: left;
   height: 40px;
   margin: 0 auto 1em; }
   @media screen and (min-width: 40em) {
-    /* line 78, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+    /* line 63, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
     .speaking-logo {
       margin: 0; } }
 
-/* line 89, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+/* line 74, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
 .speaking-logo--droidcon {
   width: 175px; }
 
-/* line 93, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+/* line 78, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
 .speaking-logo--wwc,
 .speaking-logo--turing {
   width: 30px; }
 
-/* line 98, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+/* line 83, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
 .speaking-logo--thoughtbot {
   width: 25px; }
 
-/* line 102, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+/* line 87, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
 a.speaking-title {
   color: #454545;
   text-decoration: underline; }
-  /* line 106, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+  /* line 91, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
   a.speaking-title:hover {
     color: #454545; }
 
-/* line 111, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+/* line 96, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
 .speaking-subtitle {
   color: #a6a8ab;
   font-size: 0.95rem; }
+
+/* line 101, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+.blog {
+  margin-top: 2.5em; }
+
+/* line 106, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+a.blog--title:hover {
+  color: #fc476d; }
+
+@media screen and (min-width: 40em) {
+  /* line 111, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+  .blog--date {
+    float: right; } }
+
+/* line 117, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+.blog--row {
+  border-top: 1px dashed #a6a8ab;
+  clear: both;
+  padding: 1.75em 0; }
+  /* line 122, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_speaking.css.scss */
+  .blog--row:last-of-type {
+    border-bottom: 1px dashed #a6a8ab; }
 
 /* line 1, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_testimonial.scss */
 .section--testimonial {
@@ -1100,21 +920,106 @@ a.speaking-title {
       font-size: 1.125rem; } }
 
 /* line 17, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_testimonial.scss */
-.testimonial-author {
+.testimonial--header-author {
   color: #5b6163;
   font-weight: 200;
   padding-top: 0.75em; }
 
 /* line 23, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_testimonial.scss */
-.testimonial-position {
-  color: #5b6163;
-  font-weight: 200; }
-
-/* line 28, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_testimonial.scss */
 .testimonial-button {
   background: #fff;
   display: inline-block;
   margin-bottom: 0; }
+
+/* line 29, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_testimonial.scss */
+.testimonial--header {
+  position: relative;
+  text-align: center; }
+  /* line 34, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_testimonial.scss */
+  .testimonial--header .section-title {
+    display: inline-block;
+    position: relative; }
+    @media screen and (min-width: 40em) {
+      /* line 38, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_testimonial.scss */
+      .testimonial--header .section-title::before {
+        content: '';
+        background: url("../images/leaves-right.svg") no-repeat;
+        height: 90px;
+        width: 40px;
+        position: absolute;
+        left: 0px;
+        top: -10px; } }
+    @media screen and (min-width: 40em) {
+      /* line 50, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_testimonial.scss */
+      .testimonial--header .section-title::after {
+        content: '';
+        background: url("../images/leaves.svg") no-repeat;
+        height: 90px;
+        width: 40px;
+        position: absolute;
+        right: 0px;
+        top: -10px; } }
+
+/* line 64, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_testimonial.scss */
+.testimonial--header-author {
+  padding-bottom: 0.5em; }
+  @media screen and (min-width: 53.75em) {
+    /* line 64, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_testimonial.scss */
+    .testimonial--header-author {
+      text-align: center; } }
+
+/* line 72, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_testimonial.scss */
+.testimonial--block {
+  clear: both;
+  margin-bottom: 2.5em; }
+  @media screen and (min-width: 53.75em) {
+    /* line 72, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_testimonial.scss */
+    .testimonial--block {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      clear: none; }
+      /* line 38, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
+      .testimonial--block:last-child {
+        margin-right: 0; } }
+
+/* line 82, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_testimonial.scss */
+.testimonial--content {
+  border: 1px solid #454545;
+  border-radius: 0.1875em;
+  margin-bottom: 1.75em;
+  padding: 1.75em; }
+
+/* line 89, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_testimonial.scss */
+.testimonial--author-photo {
+  border-radius: 50%;
+  display: inline-block;
+  float: left;
+  height: 3em;
+  margin: 0 0.75em;
+  width: 3em; }
+  /* line 97, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_testimonial.scss */
+  .testimonial--author-photo.author-photo--1 {
+    background: url("../images/andrew.png") no-repeat;
+    background-size: cover; }
+  /* line 102, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_testimonial.scss */
+  .testimonial--author-photo.author-photo--2 {
+    background: url("../images/alan.png") no-repeat;
+    background-size: cover; }
+  /* line 107, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_testimonial.scss */
+  .testimonial--author-photo.author-photo--3 {
+    background: url("../images/dan.png") no-repeat;
+    background-size: cover; }
+  /* line 112, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_testimonial.scss */
+  .testimonial--author-photo.author-photo--4 {
+    background: url("../images/kyle.png") no-repeat;
+    background-size: cover; }
+
+/* line 118, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_testimonial.scss */
+.testimonial--author-name {
+  font-weight: bolder;
+  padding-top: 0.75em; }
 
 @-webkit-keyframes slideRight {
   0% {
@@ -1232,42 +1137,266 @@ a.speaking-title {
     -o-transform: translateY(0);
     transform: translateY(0);
     opacity: 1; } }
-/* line 1, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_writing.scss */
-.writing {
-  background: #f2f4f7; }
-  /* line 4, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_writing.scss */
-  .writing a {
-    text-decoration: none; }
-  @media screen and (min-width: 40em) {
-    /* line 1, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_writing.scss */
-    .writing {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 48.82117%; }
-      /* line 38, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
-      .writing:last-child {
-        margin-right: 0; } }
+/* line 2, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_writing.scss */
+.writing a {
+  text-decoration: none; }
 
-/* line 13, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_writing.scss */
+/* line 7, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_writing.scss */
+.blog-post--title {
+  font-size: 0.95rem;
+  color: #454545; }
+
+/* line 12, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_writing.scss */
 .writing-image {
   background-position: center;
   background-size: cover;
-  border: 5px solid #f2f4f7;
+  border: 5px solid #e3e3e3;
   height: 200px; }
 
-/* line 20, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_writing.scss */
+/* line 19, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_writing.scss */
 .writing-image--animations {
   background: url("../images/animations.png");
   background-position: center;
   background-size: cover; }
 
-/* line 26, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_writing.scss */
+/* line 25, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_writing.scss */
 .writing-image--transitions {
   background: url("../images/transitions.png");
   background-position: center;
   background-size: cover; }
 
-/* line 32, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_writing.scss */
+/* line 31, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_writing.scss */
 .writing-title {
   padding: 2.5em; }
+
+/* line 1, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_buttons.scss */
+.btn {
+  background: #f9f738;
+  border: 1px solid #000;
+  border-radius: 0.3125em;
+  color: #000;
+  display: inline-block;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  margin: 2.5em auto;
+  padding: 1em 3.75em; }
+  /* line 15, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_buttons.scss */
+  .btn:hover {
+    background: #f7f407;
+    color: #454545;
+    cursor: pointer; }
+
+/* line 22, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_buttons.scss */
+.btn--dribbble {
+  margin-right: 0.75em; }
+
+/* line 26, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_buttons.scss */
+.buttons--center {
+  text-align: center;
+  margin-bottom: 1.75em; }
+  /* line 30, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_buttons.scss */
+  .buttons--center .btn {
+    display: block; }
+    @media screen and (min-width: 40em) {
+      /* line 30, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_buttons.scss */
+      .buttons--center .btn {
+        display: inline-block; } }
+
+/* line 1, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_work.scss */
+.work-sample {
+  float: left;
+  color: #454545;
+  margin-bottom: 2.5em;
+  text-align: left; }
+  /* line 15, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+  .work-sample:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 9, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_work.scss */
+.featured-work-wrapper {
+  color: #454545;
+  text-align: left; }
+  /* line 15, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+  .featured-work-wrapper:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (min-width: 53.75em) {
+    /* line 9, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_work.scss */
+    .featured-work-wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      /* line 38, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
+      .featured-work-wrapper:last-child {
+        margin-right: 0; }
+      /* line 52, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/neat-1.6.0/app/assets/stylesheets/grid/_omega.scss */
+      .featured-work-wrapper:nth-child(2n) {
+        margin-right: 0; }
+      /* line 57, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/neat-1.6.0/app/assets/stylesheets/grid/_omega.scss */
+      .featured-work-wrapper:nth-child(2n+1) {
+        clear: left; } }
+
+/* line 15, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+.featured-work-description-wrapper:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* line 24, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_work.scss */
+.featured-work--title {
+  font-weight: 400; }
+
+/* line 28, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_work.scss */
+.featured-work--copy {
+  margin-bottom: 5em; }
+  @media screen and (min-width: 53.75em) {
+    /* line 28, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_work.scss */
+    .featured-work--copy {
+      margin-bottom: 0; } }
+
+/* line 36, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_work.scss */
+.featured-work--link {
+  color: #fc476d;
+  text-decoration: underline; }
+  /* line 40, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_work.scss */
+  .featured-work--link:hover {
+    color: #fc476d;
+    cursor: pointer; }
+
+/* line 46, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_work.scss */
+.featured-work--subtitle {
+  color: #a6a8ab;
+  font-size: 0.95rem;
+  margin-bottom: 1.75em; }
+  /* line 52, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_work.scss */
+  .featured-work--subtitle .btn:first-of-type {
+    margin-right: 0.75em; }
+
+/* line 58, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_work.scss */
+.featured-work {
+  border: 1px solid #e3e3e3;
+  height: 500px; }
+  /* line 15, /Users/rachelcope/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+  .featured-work:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 64, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_work.scss */
+.featured-work--1 {
+  background-image: url("../images/aetna-responsive.png");
+  background-size: cover;
+  background-position: top; }
+
+/* line 70, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_work.scss */
+.featured-work--2 {
+  background-image: url("../images/medicaid-app.png");
+  background-size: cover;
+  background-position: top; }
+
+/* line 76, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_work.scss */
+.featured-work--3 {
+  background-image: url("../images/spring-analysis.png");
+  background-size: cover;
+  background-position: top; }
+
+/* line 82, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_work.scss */
+.featured-work--4 {
+  background-image: url("../images/pds-guide.png");
+  background-size: cover;
+  background-position: top; }
+
+/* line 1, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_footer.scss */
+.footer {
+  clear: both;
+  padding-bottom: 1em;
+  text-align: center; }
+
+/* line 7, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_footer.scss */
+.bio-photo {
+  border-radius: 50%;
+  display: inline-block;
+  height: 15em;
+  margin: 0 0.75em;
+  width: 15em;
+  background: url("../images/rc-headshot.jpg") no-repeat;
+  background-size: cover; }
+
+/* line 17, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_footer.scss */
+.social-icons {
+  margin-top: 1.75em; }
+
+/* line 21, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_footer.scss */
+.social-icon {
+  height: 3.125em;
+  width: 3.125em;
+  display: inline-block;
+  margin: 0.625em 0.625em 3.125em; }
+  /* line 26, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_footer.scss */
+  .social-icon:hover {
+    cursor: pointer; }
+
+/* line 31, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_footer.scss */
+.mail {
+  background: url("../images/mail.svg") no-repeat; }
+
+/* line 34, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_footer.scss */
+.twitter {
+  background: url("../images/twitter.svg") no-repeat; }
+
+/* line 37, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_footer.scss */
+.dribbble {
+  background: url("../images/dribbble.svg") no-repeat; }
+
+/* line 40, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_footer.scss */
+.instagram {
+  background: url("../images/instagram.svg") no-repeat; }
+
+/* line 43, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_footer.scss */
+.github {
+  background: url("../images/github.svg") no-repeat; }
+
+/* line 46, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_footer.scss */
+.linkedin {
+  background: url("../images/linkedin.svg") no-repeat; }
+
+/* line 3, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_clients.scss */
+.client-block {
+  padding: 20em 0; }
+
+/* line 7, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_clients.scss */
+.logos {
+  display: flex;
+  justify-content: center;
+  margin: 2.5em 0; }
+
+/* line 13, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_clients.scss */
+.logo {
+  display: inline-block;
+  margin-right: 3.125em; }
+
+/* line 18, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_clients.scss */
+.aetna {
+  background: url("../images/aetna.svg") no-repeat; }
+
+/* line 22, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_clients.scss */
+.cfa {
+  background: url("../images/cfa.svg") no-repeat; }
+
+/* line 26, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_clients.scss */
+.citi {
+  background: url("../images/citi.svg") no-repeat; }
+
+/* line 30, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_clients.scss */
+.thoughtbot {
+  background: url("../images") no-repeat;
+  background-image: url("../images/thoughtbot.svg");
+  background-size: cover; }
+
+/* line 36, /Users/rachelcope/development/rachel-cope-portfolio/source/assets/stylesheets/_clients.scss */
+.mit {
+  background: url("../images/mit.svg") no-repeat; }
